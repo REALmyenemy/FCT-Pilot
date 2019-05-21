@@ -17,31 +17,32 @@
 				FCT Pilot
 			</a>
 			<ul class="nav">
+				<!--
 				<li><input type="text" name="empresa" id="empresa" /> </li>
 				<li><input type="text" name="ubicacion" id="ubicacion" /> </li>
 				<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
+				-->
 				<!--
 					https://mdbootstrap.com/docs/jquery/forms/search/
 					https://bootsnipp.com/tags/search
 					https://bootsnipp.com/snippets/3k59p
 					https://bootsnipp.com/snippets/dpV29
 	
-					<h4 class="text-center mt-5">three input search</h4>
-					<h6 class="text-center mb-4">bootstrap 4</h6>
+					-->
 					<section class="search-sec">
 						<div class="container">
-							<form action="#" method="post" novalidate="novalidate">
+							<form action="#" method="get">
 								<div class="row">
 									<div class="col-lg-12">
-										<div class="row">
+										<div class="row" id="custom-search-input">
 											<div class="col-lg-4 col-md-4 col-sm-12 p-0">
-												<input type="text" class="form-control search-slt" placeholder="Enter Pickup City">
+												<input type="text" class="form-control search-slt" placeholder="Empresa">
 											</div>
 											 <div class="col-lg-4 col-md-4 col-sm-12 p-0">
-												<input type="text" class="form-control search-slt" placeholder="Enter Drop City">
+												<input type="text" class="form-control search-slt" placeholder="Ciudad">
 											</div>
 											<div class="col-lg-4 col-md-4 col-sm-12 p-0">
-												<button type="button" class="btn btn-danger wrn-btn">Search</button>
+												<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
 											</div>
 										</div>
 									</div>
@@ -51,7 +52,7 @@
 					</section>
 
 					<br><br>
-	
+					<!--
 					https://stackoverflow.com/questions/9656523/jquery-autocomplete-with-callback-ajax-json
 				-->
 			</ul>
