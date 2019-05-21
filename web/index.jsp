@@ -54,6 +54,8 @@
 				<br><br>
 				<!--
 					https://stackoverflow.com/questions/9656523/jquery-autocomplete-with-callback-ajax-json
+	https://fonts.google.com/specimen/Cormorant+SC
+	https://fonts.google.com/specimen/Cormorant+Upright
 				-->
 				</ul>
 
@@ -70,7 +72,7 @@
 		<section id="title-enroll">
 			<div class="jumbotron">
 				<div class="container-fluid">
-					<h3>¡Comparte tus opiniones sobre tus pr&aacute;cticas con todo el mundo!</h3>
+					<h3>¡Comparte opiniones sobre tus pr&aacute;cticas con todo el mundo!</h3>
 					<p><input type="text" name="mail" id="mail" /><a class="btn btn-primary btn-lg" href="login.html" >Inscr&iacute;bete Ahora &raquo;</a></p>
 				</div>
 			</div>

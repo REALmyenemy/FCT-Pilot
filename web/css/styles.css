@@ -61,19 +61,22 @@ ul.nav li
 	margin:4px;
 }
 
-#custom-search-input{
+#custom-search-input
+{
     padding: 3px;
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
 }
 
-#custom-search-input input{
+#custom-search-input input
+{
     border: 0;
     box-shadow: none;
 }
 
-#custom-search-input button,.bar-left{
+.bar-left
+{
     margin: 2px 0 0 0;
     background: none;
     box-shadow: none;
@@ -85,6 +88,27 @@ ul.nav li
 
 .jumbotron
 {
-	background-image:url("../img/skyscrapers_snip.jpg");
+	background-image:url("../img/https---specials-images.forbesimg.com-dam-imageserve-934255506-960x0.jpg");
+	background-position: center;
+	color:#E2E2E2;
 	text-align: center;
+}
+.jumbotron *
+{
+	margin:5px;
+}
+
+.jumbotron h3
+{
+	background-color: rgba(104,122,167,0.4);
+	margin:0 20%;
+	border-radius:5px;
+}
+
+.jumbotron input[type="text"]
+{
+	border-radius:4px;
+	border:0;
+	background-color:#e8fdfd;
+	
 }
