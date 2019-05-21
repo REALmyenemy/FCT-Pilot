@@ -82,3 +82,9 @@ ul.nav li
     padding: 0 8px 0 10px;
     border-left: solid 1px #ccc;
 }
+
+.jumbotron
+{
+	background-image:url("../img/skyscrapers_snip.jpg");
+	text-align: center;
+}

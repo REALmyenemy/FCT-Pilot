@@ -29,40 +29,33 @@
 					https://bootsnipp.com/snippets/dpV29
 	
 					-->
-					<section class="search-sec">
-						<div class="container">
-							<form action="#" method="get">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="row" id="custom-search-input">
-											<div class="col-lg-5 col-md-5 col-sm-12 p-0">
-												<input type="text" class="form-control search-slt" placeholder="Empresa">
-											</div>
-											 <div class="col-lg-5 col-md-5 col-sm-12 p-0 bar-left">
-												<input type="text" class="form-control search-slt" placeholder="Ciudad">
-											</div>
-											<div class="col-lg-2 col-md-2 col-sm-12 p-0 bar-left">
-												<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
-											</div>
+				<section class="navsearch-sec">
+					<div class="container">
+						<form action="#" method="get">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row" id="custom-search-input">
+										<div class="col-lg-5 col-md-5 col-sm-12 p-0">
+											<input type="text" class="form-control search-slt" placeholder="Empresa">
+										</div>
+										 <div class="col-lg-5 col-md-5 col-sm-12 p-0 bar-left">
+											<input type="text" class="form-control search-slt" placeholder="Ciudad">
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-12 p-0 bar-left">
+											<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
 										</div>
 									</div>
 								</div>
-							</form>
-						</div>
-					</section>
+							</div>
+						</form>
+					</div>
+				</section>
 
-					<br><br>
-					<!--
+				<br><br>
+				<!--
 					https://stackoverflow.com/questions/9656523/jquery-autocomplete-with-callback-ajax-json
 				-->
-			</ul>
-			<!--
-			<div class="nav">
-				<div><input type="text" name="empresa" id="empresa" /> </div>
-				<div><input type="text" name="ubicacion" id="ubicacion" /> </div>
-				<div class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></div>
-			</div>
-			-->
+				</ul>
 
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
@@ -74,7 +67,14 @@
 				</li>
 			</ul>			
 		</nav>
-
+		<section id="title-enroll">
+			<div class="jumbotron">
+				<div class="container-fluid">
+					<h3>¡Comparte tus opiniones sobre tus pr&aacute;cticas con todo el mundo!</h3>
+					<p><input type="text" name="mail" id="mail" /><a class="btn btn-primary btn-lg" href="login.html" >Inscr&iacute;bete Ahora &raquo;</a></p>
+				</div>
+			</div>
+		</section>
 
 		<div class="row container" id="info">
 			<div class="col-sm-3"></div>
