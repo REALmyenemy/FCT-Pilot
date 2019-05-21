@@ -35,13 +35,13 @@
 								<div class="row">
 									<div class="col-lg-12">
 										<div class="row" id="custom-search-input">
-											<div class="col-lg-4 col-md-4 col-sm-12 p-0">
+											<div class="col-lg-5 col-md-5 col-sm-12 p-0">
 												<input type="text" class="form-control search-slt" placeholder="Empresa">
 											</div>
-											 <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+											 <div class="col-lg-5 col-md-5 col-sm-12 p-0 bar-left">
 												<input type="text" class="form-control search-slt" placeholder="Ciudad">
 											</div>
-											<div class="col-lg-4 col-md-4 col-sm-12 p-0">
+											<div class="col-lg-2 col-md-2 col-sm-12 p-0 bar-left">
 												<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
 											</div>
 										</div>

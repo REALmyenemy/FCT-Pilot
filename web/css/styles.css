@@ -73,7 +73,7 @@ ul.nav li
     box-shadow: none;
 }
 
-#custom-search-input button{
+#custom-search-input button,.bar-left{
     margin: 2px 0 0 0;
     background: none;
     box-shadow: none;
