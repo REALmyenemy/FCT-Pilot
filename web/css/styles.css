@@ -4,8 +4,8 @@ body
 }
 .reverse
 {
+	display:inline-block;
 	transform:rotate(180deg);
-	font-size:2em;
 }
 
 div#info div.col-sm-4
@@ -100,8 +100,8 @@ ul.nav li
 
 .jumbotron h3
 {
-	background-color: rgba(104,122,167,0.4);
-	margin:0 20%;
+	background-color: rgba(155,168,178,0.4);
+	margin:0 21%;
 	border-radius:5px;
 }
 
@@ -111,4 +111,70 @@ ul.nav li
 	border:0;
 	background-color:#e8fdfd;
 	
+}
+
+#cormorant
+{
+	color:black;
+	font-family: 'Cormorant SC', serif;
+	font-size:2.3em;
+	/*font-weight:bold;*/
+}
+
+#info
+{
+	text-align: center;
+
+}
+
+#info p
+{
+	font-size:0.95rem;
+}
+
+#mailbox
+{
+	border:none;
+	margin:2%;
+	padding:1%;
+}
+
+
+@media (max-width: 783px)
+{
+	.bar-left
+	{
+		background: none;
+		box-shadow: none;
+		border: 0;
+		color: #fff;
+		border: none;
+	}
+
+}
+@media (max-width: 439px)
+{
+	.jumbotron h3
+	{
+		background-color: rgba(220,220,230,0.3);
+		margin:0 18%;
+		border-radius:5px;
+	}
+	#mailbox
+	{
+		border:none;
+		
+	
+	}
+	#mailbox~a
+	{
+		text-align:center;
+		margin-left:51px;
+		
+	}
+	#cormorant
+	{
+		font-weight:bold;
+		font-size:2em;
+	}
 }
