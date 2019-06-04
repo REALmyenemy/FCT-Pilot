@@ -1,3 +1,10 @@
+.debug
+{
+	background-color:red;
+	
+	border-radius:20px;
+}
+
 body
 {
 	background-color:#d4f7f7;
@@ -177,4 +184,43 @@ ul.nav li
 		font-weight:bold;
 		font-size:2em;
 	}
+}
+
+.curhead
+{
+	margin:0;
+}
+
+.curhead .col-md-5
+{
+	background-color:#d4f7f7;
+	border-radius: 20px;
+	border:1px solid #000;
+}
+.curhead a.button
+{
+	border-radius:4px;
+	height:1.5em;
+	text-align: center;
+}
+
+a i
+{
+	margin:0 1%;
+}
+
+header.empty
+{
+	background:none;
+}
+
+header.container.empty
+{
+	text-align: center;
+	margin-bottom: 2%;
+}
+header.container.empty img
+{
+	background-color: #ffffff;
+	
 }

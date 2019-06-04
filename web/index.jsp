@@ -59,11 +59,11 @@
 
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
-					<a class="nav-link btn btn-primary btn-block" href="#">Conectarse</a>
+					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Conectarse</a>
 				</li>
 				
 				<li class="nav-item">
-					<a class="nav-link btn btn-primary btn-block" href="#">Registrarse</a>
+					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Registrarse</a>
 				</li>
 			</ul>			
 		</nav>
@@ -72,7 +72,7 @@
 			<div class="jumbotron">
 				<div class="container-fluid">
 					<h3 id="cormorant">¡Comparte opiniones sobre tus pr&aacute;cticas con todo el mundo!</h3>
-					<p><input type="text" id="mailbox" name="mail" id="mail" placeholder="¡Escribe tu correo!" /><a class="btn btn-primary btn-lg" href="login.html" >Inscr&iacute;bete Ahora &raquo;</a></p>
+					<p><input type="text" id="mailbox" name="mail" id="mail" placeholder="¡Escribe tu correo!" /><a class="btn btn-primary btn-lg" href="src/login.jsp" >Inscr&iacute;bete Ahora &raquo;</a></p>
 				</div>
 			</div>
 		</section>
@@ -111,14 +111,15 @@
 							
 							
 							<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-								<h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-								<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-									consectetur
-									adipisicing elit.</p>
+								<h6 class="text-uppercase mb-4 font-weight-bold">FCT Pilot</h6>
+								<p>Estando en la formaci&oacute;n profesional, tanto en grado superior o en grado medio, tienes que hacer
+									la formaci&oacute;n en centros de trabajo, o FCT para terminar el curso.<br />
+									En FCT Pilot puedes opinar sobre como han sido tus pr&aacute;cticas, o buscar informaci&oacute;n si todav&iacute;a buscas.
+								</p>
 							</div>
 
 							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-								<h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+								<h6 class="text-uppercase mb-4 font-weight-bold">Enlaces sobre FP</h6>
 								<p>
 									<a href="http://todofp.es">Portal de la FP</a>
 								</p>
@@ -126,40 +127,41 @@
 									<a href="http://www.educacionyfp.gob.es/portada.html">Educación y FP</a>
 								</p>
 								<p>
-									<a href="#!">BrandFlow</a>
+									<a href="https://www.educaweb.com/">Educaweb</a>
 								</p>
 								<p>
-									<a href="#!">Bootstrap Angular</a>
+									<a href="https://www.ifp.es/">Innovaci&oacute;n y FP</a>
 								</p>
 							</div>
 							
 							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-								<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+								<h6 class="text-uppercase mb-4 font-weight-bold">Afiliados</h6>
 								<p>
-									<a href="#!">Your Account</a>
+									<a href="/wordpress">Blog</a>
 								</p>
 								<p>
-									<a href="#!">Become an Affiliate</a>
+									<a href="mailto:crossingsarkingwires@gmail.com?Subject=Empresa:">Soy empresa</a>
 								</p>
 								<p>
 									<a href="#!">Shipping Rates</a>
 								</p>
 								<p>
-									<a href="#!">Help</a>
+									<a href="mailto:crossingsarkingwires@gmail.com">Soporte</a>
 								</p>
 							</div>
 
 							
 							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-								<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+								<h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
 								<p>
-									<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+									<i class="fas fa-home mr-3"></i>Plaza Santa Ana 11, 41900</p>
 								<p>
-									<i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+									<i class="fas fa-envelope mr-3"></i> <a href="mailto:crossingsarkingwires@gmail.com">Contacto</a><!--Puede que monte un servidor de correo para cambiar esto-->
 								<p>
-									<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+									<i class="fas fa-phone mr-3"></i> +34 692 405 405</p>
 								<p>
-									<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+									<i class="fas fa-user-check mr-3"></i>Daniel Hidalgo<br />Carmona</p>
+									<!--<i class="fas fa-print mr-3"></i></p>-->
 							</div>
 						</div>
 						
@@ -182,7 +184,7 @@
 
 			<%--<jsp:include page="test.jsp" />--%>
 
-			<div class="hidden">
+		<div class="hidden">
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 			<link rel="stylesheet" type="text/css" href="css/brands.css" />
 
