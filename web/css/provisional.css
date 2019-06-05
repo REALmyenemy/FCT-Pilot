@@ -1,0 +1,11 @@
+article img
+{
+	width:300px;
+}
+
+.container article
+{
+	background-color:#dde6dd;
+	border:solid 1px #111;
+	margin:6px;
+}

@@ -27,7 +27,7 @@
 					https://bootsnipp.com/tags/search
 	
 					-->
-				<section class="navsearch-sec">
+				<section class="nav search-sec">
 					<div class="container">
 						<form action="#" method="get">
 							<div class="row">
@@ -56,8 +56,13 @@
 					https://fonts.google.com/specimen/Cormorant+Upright
 				-->
 				</ul>
-
+			
 			<ul class="nav justify-content-end">
+				<%
+					
+					if (session.getAttribute("sesion")==null) {
+				%>	
+				
 				<li class="nav-item">
 					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Conectarse</a>
 				</li>
@@ -65,6 +70,17 @@
 				<li class="nav-item">
 					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Registrarse</a>
 				</li>
+				<%}
+				else {
+				%>
+				<li class="nav-item">
+					<a class="nav-link btn btn-primary btn-block" href="src/profile.jsp">Mi perfil</a>
+				</li>
+				
+				<%
+					}
+				%>
+}
 			</ul>			
 		</nav>
 		
