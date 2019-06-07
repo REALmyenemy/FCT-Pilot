@@ -50,13 +50,13 @@
 		
 		
 		<div class="hidden">
-			
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 			
 			<link rel="stylesheet" type="text/css" href="../css/all.css" />
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 			
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 			<script src="../js/bootstrap.min.js"></script>

@@ -66,14 +66,8 @@
 			</ul>
 		</nav>
 		
-		
-		<!--Nombre, Sector, Ciudad, Resumen, Foto, Principal, valoración global, valoración verificada.-->
-		
-		
-		<!--https://stackoverflow.com/questions/17830686/how-to-get-city-from-coordinates-->
 		<section class="container">
-			<!--foreach result-->
-			<article class="row">
+			<div class="row">
 				
 				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
 				<div class="col-xs-12 col-md-6">
@@ -85,42 +79,13 @@
 				</div>
 				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
 				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
 				
-			</article>
-			<article class="row">
 				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
-				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
-				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
-				
-			</article>
-			<article class="row">
-				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
-				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
-				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
-				
-			</article>
+			</div>
+		
 			
 		</section>
-		
+<!--<a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#modalImage" onclick="verImagen(this.id)" ><img class="reducida" src="../img/Logo.png" /></a>-->		
 		
 		
 		
@@ -199,8 +164,19 @@
 			
 		</footer>
 		
+		
+		
+		<div class="modal fade" id="modalImage">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<img src="../img/Logo.png" class="modal-body">
+					
+					
+				</div>
+			</div>
+		</div>
+		
 		<div class="hidden">
-			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 
 			<link rel="stylesheet" type="text/css" href="../css/all.css" />

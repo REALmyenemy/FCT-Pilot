@@ -112,14 +112,7 @@
 				<p>Cada empresa puede colgar muchas im&aacute;genes para promocionarse.</p>
 			</div>
 		</div>
-		
-<!--		<footer class="container-fluid">
-			<p class="col-sm-4"><span class="reverse">&copy;</span>Daniel Hidalgo Carmona</p>
-			<p class="col-sm-4"><span class="reverse">&copy;</span>Daniel Hidalgo Carmona</p>
-			<p class="col-sm-4"><span class="reverse">&copy;</span>Daniel Hidalgo Carmona</p>
-			<p class="col-sm-4"><span class="reverse">&copy;</span>Daniel Hidalgo Carmona</p>
-			<p class="col-sm-4"><span class="reverse">&copy;</span>Daniel Hidalgo Carmona</p>
-		</footer>-->
+
  				<footer class="page-footer font-small mdb-color pt-4">
 					<div class="container text-center text-md-left">
 						<div class="row text-center text-md-left mt-3 pb-3">

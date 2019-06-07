@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,9 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta author="Daniel Hidalgo Carmona" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="../js/jquery-3.3.1.slim.min.js"></script>
 		<title>FCT pilot</title>
     </head>
-    <body>
+    <body id="profilePage">
         <nav class="navbar">
 			<a class="navbar-brand" id="inicio" href="#"><img src="../img/Logo.png" id="site-logo" alt="FCT Pilot">
 				FCT Pilot
@@ -66,61 +66,54 @@
 			</ul>
 		</nav>
 		
-		
-		<!--Nombre, Sector, Ciudad, Resumen, Foto, Principal, valoración global, valoración verificada.-->
-		
-		
-		<!--https://stackoverflow.com/questions/17830686/how-to-get-city-from-coordinates-->
-		<section class="container">
-			<!--foreach result-->
-			<article class="row">
-				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
+		<section>
+			<form class="container" method="post" action="">
+				<legend>Cambiar datos</legend>
+				<div class="row">
+					<label for="name" class="col-xs-12 col-sm-3">Nombre: </label>
+					<input type="text" id="name" name="name" value="<% %>"  class="col-xs-12 col-sm-4" />
 				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
-				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
-				
-			</article>
-			<article class="row">
-				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
+				<div class="row">
+					<label for="surname"  class="col-xs-12 col-sm-3">Apellidos: </label>
+					<input type="text" id="surname" name="surname" value="<% %>"  class="col-xs-12 col-sm-4" />
 				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
-				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
-				
-			</article>
-			<article class="row">
-				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
+				<div class="row">
+					<label for="birthdate" class="col-xs-12 col-sm-3">Fecha nacimiento: </label>
+					<input type="date" name="birthdate" id="birthdate" value="<% %>"  class="col-xs-12 col-sm-2" />
 				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
 				
-				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
+				* Si actualizas estos datos, cualquier opinión verificada tendrá que revalidarse
+				<input type="submit" value="Enviar" />
 				
-			</article>
+			</form>
+			<form class="container" method="post" action="">
+				<legend>Cambiar contrase&ntilde;a</legend>
+				<div class="row">
+					<label for="old" class="col-xs-12 col-sm-4">Contrase&ntilde;a antigua </label>
+					<input type="password" id="old" name="old" value="<% %>"  class="col-xs-12 col-sm-3" />
+				</div>
+				<div class="row">
+					<label for="new" class="col-xs-12 col-sm-4">Contrase&ntilde;a nueva </label>
+					<input type="password" id="new" name="new" value="<% %>" class="col-xs-12 col-sm-3" />
+				</div>
+				<div class="row">
+					<label for="repeat" class="col-xs-12 col-sm-4">Por seguridad, repitela: </label>
+					<input type="password" id="repeat" name="repeat" value="<% %>" class="col-xs-12 col-sm-3" />
+				</div>
+				<input type="submit" value="Actualizar contraseña"/>
+			</form>
+			<form class="container" method="post" action="">
+				<div class="row">
+					<legend class="col-sm-3">Gestionar cuenta</legend>
+					<a  class="col-sm-2" href="#" data-toggle="modal" data-target="#modalVacation"><i class="fas fa-info-circle"></i>&nbsp; M&aacute;s info</a>
+				</div><br />
+				<input type="radio" id="desactivar" name="desactivar" /> <label for="desactivar">Desactivar cuenta</label> <br /> 
+				<input type="radio" id="borrar" name="borrar" /> <label for="borrar">Cancelar cuenta</label><br />
+				<input type="checkbox" required="required" id="certain"/>&nbsp;<label for="certain">Confirmo que quiero ejecutar esta opci&oacute;n</label><br />
+				<input type="submit" value="Enviar" />				
+			</form>
 			
 		</section>
-		
 		
 		
 		
@@ -128,7 +121,7 @@
 			<div class="container text-center text-md-left">
 				<div class="row text-center text-md-left mt-3 pb-3">
 
-
+					
 					<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
 						<h6 class="text-uppercase mb-4 font-weight-bold">FCT Pilot</h6>
 						<p>Estando en la formaci&oacute;n profesional, tanto en grado superior o en grado medio, tienes que hacer
@@ -199,8 +192,22 @@
 			
 		</footer>
 		
+		<div class="modal fade" id="modalVacation" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <p class="modal-body">
+				Si desactivas tu cuenta, podr&aacute;s reactivarla en cualquier momento con tan solo recuperar tu contrase&ntilde;a, pero si la borras,
+				todas tus opiniones, y valoraciones se borrar&iacute;n de nuestra base de datos, y tendr&aacute;s que registrarte de nuevo. <br />
+				Tanto si desactivas tu cuenta como si la borras ¡Te hecharemos de menos!
+			  </p>
+
+			</div>
+		  </div>
+		</div>
+
+
+				
 		<div class="hidden">
-			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 
 			<link rel="stylesheet" type="text/css" href="../css/all.css" />
@@ -209,9 +216,10 @@
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 			
 			<script src="../js/bootstrap.min.js"></script>
-			<script src="../js/jquery-3.3.1.slim.min.js"></script>
+			
 			<script src="../js/popper.min.js"></script>
 			<script src="../js/functions.js"></script>
+			
 		</div>
 
     </body>

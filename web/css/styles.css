@@ -243,6 +243,12 @@ hr+p
 	padding:0 1%;
 }
 
+#profilePage input[type="text"],#profilePage input[type="password"],#profilePage input[type="date"]
+{
+	padding:0 5px;
+}
+
+
 a i
 {
 	margin:0 1%;
@@ -300,7 +306,27 @@ article img
 	border-style: solid;	
 }
 
+.hidden
+{
+	display: none;
+}
+
 img.col-md-3
 {
 	padding-left:0;
+}
+
+#profilePage section form.container
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border:ridge #f12a10 2px;
+	border-radius: 2px;
+}
+
+#profilePage form.container .row
+{
+	margin-bottom:5px;
 }
