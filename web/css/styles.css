@@ -159,6 +159,7 @@ ul.nav li
 	}
 
 }
+
 @media (max-width: 439px)
 {
 	.jumbotron h3
@@ -197,11 +198,49 @@ ul.nav li
 	border-radius: 20px;
 	border:1px solid #000;
 }
+
 .curhead a.button
 {
 	border-radius:4px;
 	height:1.5em;
 	text-align: center;
+	margin-bottom:5%;
+}
+
+#loginPage *
+{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#loginPage img
+{
+	width:320px;
+}
+
+.curhead h3
+{
+	margin: 3% 0%;
+	font-family: 'Bree Serif', serif;
+}
+
+.hr
+{
+	border:1px brown solid;
+}
+
+hr+p
+{
+	text-align: center;
+}
+
+#loginPage .row
+{
+	margin-bottom:4px;
+}
+
+#loginPage input[type="text"],#loginPage input[type="password"]
+{
+	padding:0 1%;
 }
 
 a i
@@ -222,5 +261,19 @@ header.container.empty
 header.container.empty img
 {
 	background-color: #ffffff;
-	
+	border-radius:2px;
+}
+
+
+
+article img
+{
+	width:300px;
+}
+
+.container article
+{
+	background-color:#dde6dd;
+	border:solid 1px #111;
+	margin:6px;
 }

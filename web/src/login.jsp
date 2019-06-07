@@ -8,15 +8,16 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>FCT pilot</title>
 	</head>
-    <body>
+    <body id="loginPage">
 		<header class="container empty"><img src="../img/header.png"></header>
         <div class="container-fluid row curhead">
 			<form class="container col-md-5">
 				<h3>Usuario registrado</h3>
+				<hr class="hr" />
 				<p>Accede via usuario y contrase&ntilde;a</p>
-				<p>Nombre de usuario&nbsp; <input type="text" name="usu" id="lusu" /></p>
-				<p>Contrase&ntilde;a&nbsp; <input type="password" name="pass" id="lpass" /></p>
-				<a href="#">¿Contrase&ntilde;a olvidada?</a>
+				<div class="row"><div class="col-sm-4">Nombre de usuario&nbsp;</div> <input type="text" name="usu" id="lusu" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">Contrase&ntilde;a&nbsp;</div> <input type="password" name="pass" id="lpass" class="col-sm-6" /></div>
+				<a href="#">¿Contrase&ntilde;a olvidada?</a> <br />
 				<input type="submit" value="Acceder" />
 				<hr />
 				<a href="#" class="button btn-block btn-primary"> <i class="fab fa-facebook-f"></i> Login con Facebook</a>
@@ -26,12 +27,18 @@
 			
 			<form class="container col-md-5">
 				<h3>Alta usuario</h3>
+				<hr class="hr" />
 				<p>Registro de datos</p>
-				<p>Nombre de usuario *&nbsp; <input type="text" name="usu" id="rusu" required="requrired" /></p>
+<!--				<p>Nombre de usuario *&nbsp; <input type="text" name="usu" id="rusu" required="requrired" /></p>
 				<p>Contrase&ntilde;a *&nbsp; <input type="password" name="pass" id="rpass" required="requrired" /></p>
 				<p>Nombre&nbsp; <input type="text" name="name" id="name" /></p>
 				<p>Apellido/s&nbsp; <input type="text" name="lastname" id="lastname" /></p>
-				<p>Fecha nacimiento: *&nbsp; <input type="date" name="birth" id="birth" required="requrired" /></p>
+				<p>Fecha nacimiento: *&nbsp; <input type="date" name="birth" id="birth" required="requrired" /></p>-->
+				<div class="row"><div class="col-sm-4"> Nombre de usuario *&nbsp;</div> <input type="text" name="usu" id="rusu" required="requrired" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">Contrase&ntilde;a *&nbsp;</div> <input type="password" name="pass" id="rpass" required="requrired" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">Nombre&nbsp;</div> <input type="text" name="name" id="name" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">Apellido/s&nbsp;</div> <input type="text" name="lastname" id="lastname" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">Fecha nacimiento: *&nbsp;</div> <input type="date" name="birth" id="birth" required="requrired" class="col-sm-6" /></div>
 				
 				<input type="submit" value="Darse de alta" />
 				
@@ -44,7 +51,9 @@
 		<div class="hidden">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 			<link rel="stylesheet" type="text/css" href="../css/brands.css" />
-
+			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+			
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 			<link rel="stylesheet" type="text/css" href="../css/regular.css" />
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
