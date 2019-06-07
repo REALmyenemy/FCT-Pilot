@@ -75,15 +75,16 @@
 			<!--foreach result-->
 			<article class="row">
 				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-1"/>
-				<h2 class="col-xs-1">Empresa de Prueba</h2>
-				<p class="col-xs-2">Valoración de la empresa</p>
-				<p class="col-xs-1">Valoración verificada</p>
-				<p class="col-xs-1">Ciudad</p>
-				<p class="col-xs-1">Sector</p>
-				<p class="col-xs-1">Lorem ipsum de la empresa</p>				
-
-
+				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
+				<div class="col-xs-12 col-md-6">
+					<h2 class="col-xs-1">Empresa de Prueba</h2>
+					<p class="col-xs-2">Valoración de la empresa</p>
+					<p class="col-xs-1">Valoración verificada</p>
+					<p class="col-xs-1">Ciudad</p>
+					<p class="col-xs-1">Sector</p>
+				</div>
+				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
+				
 				<a href="empresa.jsp&id=blablabla" class="btn btn-block btn-danger">Saber m&aacute;s</a>
 				
 			</article>
@@ -169,13 +170,13 @@
 		
 		<div class="hidden">
 			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-			<link rel="stylesheet" type="text/css" href="../css/brands.css" />
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 
+			<link rel="stylesheet" type="text/css" href="../css/all.css" />
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href="../css/regular.css" />
+			
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
-			<link rel="stylesheet" type="text/css" href="../css/provisional.css" />
 			<script src="../js/bootstrap.min.js"></script>
 			<script src="../js/jquery-3.3.1.slim.min.js"></script>
 			<script src="../js/popper.min.js"></script>

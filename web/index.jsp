@@ -201,11 +201,10 @@
 
 		<div class="hidden">
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-			<link rel="stylesheet" type="text/css" href="css/brands.css" />
 
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 			<link href="https://fonts.googleapis.com/css?family=Cormorant+SC&display=swap" rel="stylesheet"> 
-			<link rel="stylesheet" type="text/css" href="css/regular.css" />
+
 			<link rel="stylesheet" type="text/css" href="css/styles.css" />
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/jquery-3.3.1.slim.min.js"></script>

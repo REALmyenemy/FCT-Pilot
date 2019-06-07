@@ -40,6 +40,7 @@
 				<div class="row"><div class="col-sm-4">Apellido/s&nbsp;</div> <input type="text" name="lastname" id="lastname" class="col-sm-6" /></div>
 				<div class="row"><div class="col-sm-4">Fecha nacimiento: *&nbsp;</div> <input type="date" name="birth" id="birth" required="requrired" class="col-sm-6" /></div>
 				
+				<div class="row"><input type="checkbox" required="required" name="privacy" id="privacy" class="col-sm-1" /><label for="privacy" class="col-sm-11">Pulsa aqu&iacute; para confirmar que has leido y aceptado <a href="privacy.html" target="_blank">los terminos de privacidad</a>.</label></div>
 				<input type="submit" value="Darse de alta" />
 				
 
@@ -49,13 +50,14 @@
 		
 		
 		<div class="hidden">
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-			<link rel="stylesheet" type="text/css" href="../css/brands.css" />
+			
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 			
+			<link rel="stylesheet" type="text/css" href="../css/all.css" />
+			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-			<link rel="stylesheet" type="text/css" href="../css/regular.css" />
+			
 			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 			<script src="../js/bootstrap.min.js"></script>
 			<script src="../js/jquery-3.3.1.slim.min.js"></script>

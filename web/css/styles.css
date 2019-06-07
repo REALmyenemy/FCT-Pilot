@@ -238,7 +238,7 @@ hr+p
 	margin-bottom:4px;
 }
 
-#loginPage input[type="text"],#loginPage input[type="password"]
+#loginPage input[type="text"],#loginPage input[type="password"],#loginPage input[type="date"]
 {
 	padding:0 1%;
 }
@@ -264,8 +264,6 @@ header.container.empty img
 	border-radius:2px;
 }
 
-
-
 article img
 {
 	width:300px;
@@ -276,4 +274,33 @@ article img
 	background-color:#dde6dd;
 	border:solid 1px #111;
 	margin:6px;
+}
+
+.vr
+{
+	border:none;
+	border-left: 1px;
+	border-right: 1px;
+	border-color:black;
+	border-style: solid;	
+}
+
+.vr-left
+{
+	border:none;
+	border-left: 1px;
+	border-color:black;
+	border-style: solid;	
+}
+.vr-right
+{
+	border:none;
+	border-right: 1px;
+	border-color:black;
+	border-style: solid;	
+}
+
+img.col-md-3
+{
+	padding-left:0;
 }
