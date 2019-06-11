@@ -9,7 +9,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>FCT pilot</title>
     </head>
-    <body>
+    <body id="empresa">
         <nav class="navbar">
 			<a class="navbar-brand" id="inicio" href="#"><img src="../img/Logo.png" id="site-logo" alt="FCT Pilot">
 				FCT Pilot
@@ -67,18 +67,32 @@
 		</nav>
 		
 		<section class="container">
+			
+			<h2 class="row col-xs-12">Empresa de Prueba</h2>
 			<div class="row">
 				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
-				<div class="col-xs-12 col-md-6">
-					<h2 class="col-xs-1">Empresa de Prueba</h2>
-					<p class="col-xs-2">Valoración de la empresa</p>
-					<p class="col-xs-1">Valoración verificada</p>
-					<p class="col-xs-1">Ciudad</p>
-					<p class="col-xs-1">Sector</p>
+				<!--<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3 principal"/>-->
+				<div class="col-xs-12 col-md-3 principal">
+					<img src="../img/1696130.jpg" alt="Empresa Prueba" class="row principal"/>
+					<div class="row">
+						<img class="col-xs-4 preview" src="../img/edificio-de-uso-industrial---escaparate-en-vega-del-rey-camas-7525-2-1.jpg" />
+						<img class="col-xs-4 preview" src="../img/empresas.jpeg" />
+						<div class="col-xs-4 preview more"> Ver m&aacute;s </div>
+					</div>
 				</div>
-				<p class="col-xs-12 col-md-3">Lorem ipsum de la empresa</p>
-				
+				<div class="col-md-6">
+					<p class="col-xs-12">Valoración de la empresa: &nbsp;&nbsp;&nbsp;<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+					<p class="col-xs-12">Valoración verificada: &nbsp;&nbsp;&nbsp;<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+					
+					<p class="col-xs-12">Telecomunicaciones</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus, ante commodo euismod facilisis, odio arcu lacinia purus, non facilisis massa elit ac arcu. Aliquam blandit magna ante. Vestibulum ut porta nunc, vel molestie odio. Aliquam erat volutpat. Phasellus at magna vitae felis gravida efficitur. Phasellus in risus vel metus placerat efficitur ac sit amet velit. Vivamus eget est eu orci tincidunt maximus non nec nisl. Sed et nisl ipsum. Suspendisse potenti. Fusce eget ipsum sit amet sapien dapibus lacinia. Donec a varius dui. Sed a nisl in mi pretium viverra. Phasellus diam felis, cursus eu nibh sollicitudin, tincidunt rutrum ex. Cras suscipit ornare blandit. </p>
+				</div>
+				<div class="col-md-3 principal">
+					<img class="mapa" src="../img/screenshot.143.png" />
+					<h5>Barcelona</h5><br/> 
+					<p>Calle de prueba uno dos tres</p>
+					<p>C.P.:12345
+				</div>
 				
 				
 			</div>

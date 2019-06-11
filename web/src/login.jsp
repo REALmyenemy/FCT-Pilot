@@ -9,7 +9,7 @@
 		<title>FCT pilot</title>
 	</head>
     <body id="loginPage">
-		<header class="container empty"><img src="../img/header.png"></header>
+		<header class="container empty"><img class="logo" src="../img/header.png"></header>
         <div class="container-fluid row curhead">
 			<form class="container col-md-5">
 				<h3>Usuario registrado</h3>
@@ -20,9 +20,11 @@
 				<a href="#">¿Contrase&ntilde;a olvidada?</a> <br />
 				<input type="submit" value="Acceder" />
 				<hr />
-				<a href="#" class="button btn-block btn-primary"> <i class="fab fa-facebook-f"></i> Login con Facebook</a>
+				<!--<a href="#" class="button btn-block btn-primary"> <i class="fab fa-facebook-f"></i> Login con Facebook</a>-->
+				<a href="#" class="button btn-block btn-primary"> <img class="falseFontAwesome" src="../img/facebook-f-brands.svg" title="facebook" alt="F "/> Login con Facebook</a>
 				<hr />
-				<a href="#" class="button btn-block btn-primary"><i class="fab fa-google-plus-g"></i>Login con Google+</a>
+				<!--<a href="#" class="button btn-block btn-primary"><i class="fab fa-google-plus-g"></i>Login con Google+</a>-->
+				<a href="#" class="button btn-block btn-primary"><img class="falseFontAwesome gplus" src="../img/google-plus-g-brands.svg" title="google" alt="G+ "/>Login con Google+</a>
 			</form>
 			
 			<form class="container col-md-5">

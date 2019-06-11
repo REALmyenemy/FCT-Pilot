@@ -90,7 +90,7 @@
 			</article>
 			<article class="row">
 				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
+				<img src="../img/93938348.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
 				<div class="col-xs-12 col-md-6">
 					<h2 class="col-xs-1">Empresa de Prueba</h2>
 					<p class="col-xs-2">Valoración de la empresa</p>
@@ -105,7 +105,7 @@
 			</article>
 			<article class="row">
 				
-				<img src="../img/1696130.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
+				<img src="../img/deloitte-cripto-blockchain.jpg" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
 				<div class="col-xs-12 col-md-6">
 					<h2 class="col-xs-1">Empresa de Prueba</h2>
 					<p class="col-xs-2">Valoración de la empresa</p>
