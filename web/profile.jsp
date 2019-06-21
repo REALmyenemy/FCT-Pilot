@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta author="Daniel Hidalgo Carmona" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<script src="../js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
 		<title>FCT pilot</title>
     </head>
     <body id="profilePage">
@@ -80,17 +80,17 @@
 
 				
 		<div class="hidden">
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-			<link rel="stylesheet" type="text/css" href="../css/all.css" />
+			<link rel="stylesheet" type="text/css" href="css/all.css" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 			
-			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+			<link rel="stylesheet" type="text/css" href="css/styles.css" />
 			
-			<script src="../js/bootstrap.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
 			
-			<script src="../js/popper.min.js"></script>
-			<script src="../js/functions.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/functions.js"></script>
 			
 		</div>
 
