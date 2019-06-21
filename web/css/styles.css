@@ -372,12 +372,36 @@ img.mapa
 	margin-top: 5px;
 	text-decoration: underline;
 }
-
-#empresa section,#empresa section > *,#empresa section > * > *
+#empresa section.container h2
 {
-	border:black dotted 2px;
+	font-weight: bolder;
+	font-family: 'Bungee', cursive;
+	margin:5px;
+	text-decoration: underline;
 }
-
+section.container.empresa, section.container.empresa > * > *, .opinionBorder
+{
+	border:gray solid 1px;
+}
+.opinion .user
+{
+	text-align: center;
+	border-right:solid 1px gray;
+}
+.opinion .user h6
+{
+	font-size:1.5em;
+	
+}
+.opinion .user p
+{
+	color:darkgreen;
+}
+.opiniones, .opinion
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
 .preview
 {
 	height:50px;
@@ -390,10 +414,17 @@ img.mapa
 	margin-left:0;
 	margin-right:0;
 }
+
 .more
 {
 	color:white;
 	text-align:center;
 	background:black;
 	padding-top:10px;
+}
+
+.searchImg
+{
+	width:100%;
+	height:250px;
 }

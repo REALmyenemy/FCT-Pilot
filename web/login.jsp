@@ -9,7 +9,7 @@
 		<title>FCT pilot</title>
 	</head>
     <body id="loginPage">
-		<header class="container empty"><img class="logo" src="../img/header.png"></header>
+		<header class="container empty"><a href="index.jsp"><img class="logo" src="img/header.png"></a></header>
         <div class="container-fluid row curhead">
 			<form class="container col-md-5">
 				<h3>Usuario registrado</h3>
@@ -21,10 +21,10 @@
 				<input type="submit" value="Acceder" />
 				<hr />
 				<!--<a href="#" class="button btn-block btn-primary"> <i class="fab fa-facebook-f"></i> Login con Facebook</a>-->
-				<a href="#" class="button btn-block btn-primary"> <img class="falseFontAwesome" src="../img/facebook-f-brands.svg" title="facebook" alt="F "/> Login con Facebook</a>
+				<a href="#" class="button btn-block btn-primary"> <img class="falseFontAwesome" src="img/facebook-f-brands.svg" title="facebook" alt="F "/> Login con Facebook</a>
 				<hr />
 				<!--<a href="#" class="button btn-block btn-primary"><i class="fab fa-google-plus-g"></i>Login con Google+</a>-->
-				<a href="#" class="button btn-block btn-primary"><img class="falseFontAwesome gplus" src="../img/google-plus-g-brands.svg" title="google" alt="G+ "/>Login con Google+</a>
+				<a href="#" class="button btn-block btn-primary"><img class="falseFontAwesome gplus" src="img/google-plus-g-brands.svg" title="google" alt="G+ "/>Login con Google+</a>
 			</form>
 			
 			<form class="container col-md-5">
@@ -55,16 +55,16 @@
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
 			
-			<link rel="stylesheet" type="text/css" href="../css/all.css" />
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+			<link rel="stylesheet" type="text/css" href="css/all.css" />
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 			
-			<link rel="stylesheet" type="text/css" href="../css/styles.css" />
-			<script src="../js/bootstrap.min.js"></script>
-			<script src="../js/jquery-3.3.1.slim.min.js"></script>
-			<script src="../js/popper.min.js"></script>
-			<script src="../js/functions.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/styles.css" />
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery-3.3.1.slim.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/functions.js"></script>
 		</div>
     </body>
 			
