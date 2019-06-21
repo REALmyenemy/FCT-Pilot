@@ -16,19 +16,10 @@
 				FCT Pilot
 			</a>
 			<ul class="nav">
-				<!--
-				<li><input type="text" name="empresa" id="empresa" /> </li>
-				<li><input type="text" name="ubicacion" id="ubicacion" /> </li>
-				<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block"><i class="fas fa-search"></i></a></li>
-				-->
-				<!--
-					https://mdbootstrap.com/docs/jquery/forms/search/
-					https://bootsnipp.com/tags/search
-	
-					-->
+				
 				<section class="nav search-sec">
 					<div class="container">
-						<form action="#" method="get">
+						<form action="search" method="get">
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="row" id="custom-search-input">
@@ -39,7 +30,9 @@
 											<input type="text" class="form-control search-slt" placeholder="Ciudad">
 										</div>
 										<div class="col-lg-2 col-md-2 col-sm-12 p-0 bar-left">
-											<li class="margin-t-lg"><a href="#" class="btn btn-primary btn-block" onclick="buscar()"><i class="fas fa-search" ></i></a></li>
+											<li class="margin-t-lg"><label for="buscar" href="" class="btn btn-primary btn-block"><i class="fas fa-search" ></i></label>
+												<input type="submit" value="buscar" id="buscar" class="hidden"/>
+											</li>
 										</div>
 									</div>
 								</div>
@@ -51,8 +44,7 @@
 				<br><br>
 				<!--
 					https://stackoverflow.com/questions/9656523/jquery-autocomplete-with-callback-ajax-json
-					https://fonts.google.com/specimen/Cormorant+SC
-					https://fonts.google.com/specimen/Cormorant+Upright
+					
 				-->
 				</ul>
 			
@@ -62,17 +54,17 @@
 				%>	
 				
 				<li class="nav-item">
-					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Conectarse</a>
+					<a class="nav-link btn btn-primary btn-block" href="login.jsp">Conectarse</a>
 				</li>
 				
 				<li class="nav-item">
-					<a class="nav-link btn btn-primary btn-block" href="src/login.jsp">Registrarse</a>
+					<a class="nav-link btn btn-primary btn-block" href="login.jsp">Registrarse</a>
 				</li>
 				<%
 				} else {
 				%>
 				<li class="nav-item">
-					<a class="nav-link btn btn-primary btn-block" href="src/profile.jsp">Mi perfil</a>
+					<a class="nav-link btn btn-primary btn-block" href="profile.jsp">Mi perfil</a>
 				</li>
 				
 				<%
