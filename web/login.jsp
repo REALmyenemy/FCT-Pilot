@@ -27,7 +27,7 @@
 				<a href="#" class="button btn-block btn-primary"><img class="falseFontAwesome gplus" src="img/google-plus-g-brands.svg" title="google" alt="G+ "/>Login con Google+</a>
 			</form>
 			
-			<form class="container col-md-5">
+			<form class="container col-md-5" method="post" action="Register">
 				<h3>Alta usuario</h3>
 				<hr class="hr" />
 				<p>Registro de datos</p>

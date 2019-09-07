@@ -24,7 +24,15 @@ public class Register extends HttpServlet {
 			throws ServletException, IOException {
 			Conectar c=new Conectar();
 		try {
-			c.lanzar("insert into usuarios values('"+request.getParameter("rusu")+"','"+request.getParameter("rpass")+"','"+request.getParameter("name")+"','"+request.getParameter("lastname")+"',TRUE,'Estudiante','"+request.getParameter("birth")+"','");
+			c.lanzar("insert into usuarios values('"
+				+request.getParameter("rusu")+"','"
+				+request.getParameter("rpass")+"','"
+				+request.getParameter("name")+"','"
+				+request.getParameter("lastname")
+				+"',TRUE,"
+				+ "'Estudiante','"
+				+request.getParameter("birth")+
+			"')");
 			
 		} catch (SQLException ex) {
 			

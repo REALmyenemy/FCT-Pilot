@@ -1,7 +1,6 @@
 .debug
 {
 	background-color:red;
-	
 	border-radius:20px;
 }
 
@@ -427,4 +426,25 @@ section.container.empresa, section.container.empresa > * > *, .opinionBorder
 {
 	width:100%;
 	height:250px;
+}
+
+.search-slt
+{
+	height:50px;
+}
+
+div.mapa 
+{
+	background-color:#fff4fe;
+	text-align: right;
+	border-bottom: solid 1px darkgray;
+}
+div.mapa small
+{
+	margin-right:4px;
+}
+
+div.mapa iframe
+{
+	width:100%;
 }

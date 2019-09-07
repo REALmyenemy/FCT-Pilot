@@ -1,9 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : 21-jun-2019, 6:52:44
-    Author     : Admin
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +6,7 @@
 			
 		</header>
 		<nav class="navbar">
-			<a class="navbar-brand" id="inicio" href="#"><img src="img/Logo.png" id="site-logo" alt="FCT Pilot">
+			<a class="navbar-brand" id="inicio" href="/FCT_Pilot"><img src="img/Logo.png" id="site-logo" alt="FCT Pilot">
 				FCT Pilot
 			</a>
 			<ul class="nav">
