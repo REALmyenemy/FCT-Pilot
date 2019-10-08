@@ -1,0 +1,10 @@
+Comprobar que existen carpetas
+https://alvinalexander.com/java/java-file-exists-directory-exists
+Crear carpeta
+https://stackoverflow.com/questions/3634853/how-to-create-a-directory-in-java
+Subir archivo
+https://www.guru99.com/jsp-file-upload-download.html
+Renombrar archivo
+https://www.inf.unibz.it/~calvanese/teaching/06-07-ip/lecture-notes/uni09/node12.html
+Mover después
+https://www.geeksforgeeks.org/moving-file-one-directory-another-using-java/
