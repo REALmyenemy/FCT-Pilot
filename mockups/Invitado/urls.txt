@@ -8,3 +8,5 @@ Renombrar archivo
 https://www.inf.unibz.it/~calvanese/teaching/06-07-ip/lecture-notes/uni09/node12.html
 Mover después
 https://www.geeksforgeeks.org/moving-file-one-directory-another-using-java/
+Editar JSON
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/parse
