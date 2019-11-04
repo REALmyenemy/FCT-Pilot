@@ -24,5 +24,5 @@ function encontrar_ciudad(lat,long)
             console.log('Success');
         },
         error: function () { console.log('error'); } 
-    }); 
+    });
 });
