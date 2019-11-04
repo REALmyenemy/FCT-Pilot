@@ -15,7 +15,11 @@
 			<div class="jumbotron">
 				<div class="container-fluid">
 					<h3 id="cormorant">¡Comparte opiniones sobre tus pr&aacute;cticas con todo el mundo!</h3>
-					<p><input type="text" id="mailbox" name="mail" id="mail" placeholder="¡Escribe tu correo!" /><a class="btn btn-primary btn-lg" href="login.jsp" >Inscr&iacute;bete Ahora &raquo;</a></p>
+					<p>
+						<input type="text" id="mailbox" name="mail" id="mail" placeholder="¡Escribe tu correo!" />
+						<!--<a class="btn btn-primary btn-lg" href="login.jsp" >Inscr&iacute;bete Ahora &raquo;</a>-->
+						<button class="btn btn-primary btn-lg" onclick="getandsend()" >Inscr&iacute;bete Ahora &raquo;</button>
+					</p>
 				</div>
 			</div>
 		</section>

@@ -17,7 +17,7 @@
 				<p>Accede via usuario y contrase&ntilde;a</p>
 				<div class="row"><div class="col-sm-4">Nombre de usuario&nbsp;</div> <input type="text" name="usu" id="lusu" class="col-sm-6" /></div>
 				<div class="row"><div class="col-sm-4">Contrase&ntilde;a&nbsp;</div> <input type="password" name="pass" id="lpass" class="col-sm-6" /></div>
-				<a href="#">¿Contrase&ntilde;a olvidada?</a> <br />
+				<a href="forgotPassword.jsp">¿Contrase&ntilde;a olvidada?</a> <br />
 				<input type="submit" value="Acceder" />
 				<hr />
 				<!--<a href="#" class="button btn-block btn-primary"> <i class="fab fa-facebook-f"></i> Login con Facebook</a>-->
@@ -65,6 +65,7 @@
 			<script src="js/jquery-3.3.1.slim.min.js"></script>
 			<script src="js/popper.min.js"></script>
 			<script src="js/functions.js"></script>
+			<script src="js/login.js"></script>
 		</div>
     </body>
 			

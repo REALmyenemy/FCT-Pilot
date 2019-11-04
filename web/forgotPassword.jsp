@@ -27,10 +27,12 @@
 				<p>
 				Escribe tu correo electr&oacute;nico. Si existe, te mandaremos un mail con una nueva clave.
 				</p>
-				<label for="email">Email:</label>
-				<input type="text" name="email" id="email" size="20">
-				
-				<input type="submit" value="Reiniciar clave" />
+				<div class="center">
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email" size="20">
+					<br />
+					<input type="submit" value="Reiniciar clave" />
+				</div>
 			</form>		
 		</div>
 		
@@ -45,6 +47,7 @@
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 			
 			<link rel="stylesheet" type="text/css" href="css/styles.css" />
+			<link rel="stylesheet" type="text/css" href="css/forgotPassword.css" />
 			<script src="js/bootstrap.min.js"></script>
 			<script src="js/jquery-3.3.1.slim.min.js"></script>
 			<script src="js/popper.min.js"></script>

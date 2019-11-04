@@ -1,3 +1,11 @@
+function getandsend()
+{
+	sessionStorage.setItem('mail',document.getElementById("mailbox").value);
+	window.location.href = "login.jsp";
+}
+
+
+
 function encontrar_ciudad(lat,long)
 {
     $.ajax({
@@ -25,4 +33,4 @@ function encontrar_ciudad(lat,long)
         },
         error: function () { console.log('error'); } 
     });
-});
+};
