@@ -15,7 +15,8 @@ CREATE TABLE empresa (
 	sector varchar(30),
 	resumen varchar(255),
 	ubicacion varchar(255),
-	imagenPrincipal int(11)
+	imagenPrincipal int(11),
+	constraint fk_emp_ima foreign key (imageprincipal) references imagenes
 );
 
 CREATE TABLE imagenes (
@@ -49,15 +50,15 @@ CREATE TABLE puesto (
 CREATE TABLE requisito (
 	empresa int(11),
 	puesto int(11),
-	id int(11) NOT NULL auto increment,
+	id int(11) NOT NULL auto_increment,
 	descripcion varchar(255),
 	constraint pk_requisito PRIMARY KEY (empresa,puesto,id),
 	constraint fk_requisito foreign key (empresa,puesto) references puesto
 );
 
 CREATE TABLE valoracion (
-	usuario varchar(35) NOT NULL,
-	empresa int(11) NOT NULL,
+	usuario varchar(35),
+	empresa int(11),
 	valoracion int(11),
 	PRIMARY KEY (usuario,empresa)
 );
