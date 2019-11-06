@@ -2,7 +2,8 @@ CREATE TABLE usuarios (
 	id varchar(35) primary key,
 	nombre varchar(100),
 	apellidos varchar(120),
-	pass varchar(200),
+	pass mediumblob,
+	salt mediumblob,
 	cuentaActiva tinyint(1),
 	rol varchar(8),
 	fechanacimiento date
@@ -16,6 +17,7 @@ CREATE TABLE empresa (
 	resumen varchar(255),
 	ubicacion varchar(255),
 	imagenPrincipal int(11),
+	aprobada tinyint(1),
 	constraint fk_emp_ima foreign key (imageprincipal) references imagenes
 );
 
