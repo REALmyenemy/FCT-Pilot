@@ -1,0 +1,10 @@
+<textarea style="width:500px;height:400px;">
+¡Recuerda valorar de 1 a 5 esto!
+
+Relación teoría/practica: 
+Relación con el tutor laboral: 
+Dificultad de las practicas: 
+Accesos a la empresa: 
+Formación adicional: 
+
+</textarea>
