@@ -1,0 +1,12 @@
+Cargar start.sql sobre fctpilot.es con heidisql
+
+arreglar tomcat
+
+adecentar fctpilot
+
+desplegar fctpilot sobre fctpilot.es
+
+Cambiar puerto tomcat
+
+crear virtualhost, con apache o con tomcat https://tecadmin.net/create-virtualhost-in-tomcat/
+
