@@ -6,13 +6,23 @@ CM - arreglar tomcat
 /etc/tomcat
 /usr/httpd
 
-CM - adecentar fctpilot
-
 C  - [desplegar fctpilot sobre fctpilot.es]
 
-C  - Agregar filler data a la base de datos.
+CM - adecentar fctpilot
+Controlador/Search.java solo busca el primer parámetro
+Agregar filler data
+search.jsp no comprende que pueda haber un solo parámetro.
+Iterar sobre los resultados recibiendo información.
+ToS.jsp
+Links a "Not Implemented" sobre fb,g+ y recuperar pass.
+Comprobar que Register funciona
+Funcionalidad de log in en sesión
+Funcionalidad de valorar
+Funcionalidad de comentar
+Agregar filler data
+
+C  - desplegar fctpilot sobre fctpilot.es
 
 CM - Cambiar puerto tomcat
 
 CM - crear virtualhost, con apache o con tomcat https://tecadmin.net/create-virtualhost-in-tomcat/
-
