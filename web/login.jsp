@@ -11,7 +11,7 @@
     <body id="loginPage">
 		<header class="container empty"><a href="index.jsp"><img class="logo" src="img/header.png"></a></header>
         <div class="container-fluid row curhead">
-			<form class="container col-md-5">
+			<form class="container col-md-5" action="Login">
 				<h3>Usuario registrado</h3>
 				<hr class="hr" />
 				<p>Accede via usuario y contrase&ntilde;a</p>
