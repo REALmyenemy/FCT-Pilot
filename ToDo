@@ -1,12 +1,18 @@
-Cargar start.sql sobre fctpilot.es con heidisql
+02/12/19
+C  - Cargar start.sql sobre fctpilot.es con heidisql
 
-arreglar tomcat
+CM - arreglar tomcat
+/opt/tomcat
+/etc/tomcat
+/usr/httpd
 
-adecentar fctpilot
+CM - adecentar fctpilot
 
-desplegar fctpilot sobre fctpilot.es
+C  - [desplegar fctpilot sobre fctpilot.es]
 
-Cambiar puerto tomcat
+C  - Agregar filler data a la base de datos.
 
-crear virtualhost, con apache o con tomcat https://tecadmin.net/create-virtualhost-in-tomcat/
+CM - Cambiar puerto tomcat
+
+CM - crear virtualhost, con apache o con tomcat https://tecadmin.net/create-virtualhost-in-tomcat/
 
