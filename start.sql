@@ -7,8 +7,9 @@ drop table if exists empresa;
 drop table if exists opinion;
 drop table if exists valoracion;
 drop table if exists usuarios;
-/*
-create table usuarios (
+/* -- Para el recuperar contraseña
+create table usuarios
+(
 	id varchar(35) primary key,
 	nombre varchar(100),
 	apellidos varchar(120),
@@ -16,7 +17,8 @@ create table usuarios (
 	salt mediumblob,
 	cuentaactiva tinyint(1),
 	rol varchar(8),
-	fechanacimiento date
+	fechanacimiento date,
+	correoelectronico varchar(200)
 );*/
 create or replace table usuarios
 (
@@ -24,91 +26,92 @@ create or replace table usuarios
 	nombre varchar(100), 
 	apellidos varchar(120), 
 	pass varchar(200), 
-	cuentaActiva boolean, 
+	cuentaActiva tinyint(1), 
 	rol varchar(8), 
-	fechanacimiento date, 
-	constraint ck_rol check 
-	(rol in ('Gestor','Profesor','Alumno'))
+	fechanacimiento date,
+	correoelectronico varchar(200),
+	constraint ck_rol check (rol in ('Gestor','Profesor','Alumno'))
 );
-´/*
-create table empresa (
+
+create or replace table empresa
+(
 	id integer primary key auto_increment,
 	nombre varchar(50),
-	representante varchar(200),
-	sector varchar(30),
+	representante varchar (200),
+	sector varchar (30),
 	resumen varchar(255),
 	ubicacion varchar(255),
 	imagenprincipal integer,
-	aprobada tinyint(1),
-	constraint fk_emp_ima foreign key (imageprincipal) references imagenes
-);.*/
-
-create or replace table empresa (id integer primary key auto_increment,
- nombre varchar(50),
- representante varchar (200),
- sector varchar (30),
- resumen varchar(255),
- ubicacion varchar(255),
- imagenPrincipal integer
+	aprobada tinyint(1) --Este campo es para una ampliación
 );
 
-create table valoracion (
+create table valoracion
+(
 	usuario varchar(35),
 	empresa integer,
 	valoracion integer,
 	primary key (usuario,empresa)
 );
 
-create table opinion (
-	usuario varchar(35),
-	empresa integer,
-	comentario varchar(255),
-	certificado tinyint(1),
-	opinionprofesor varchar(128),
-	constraint pk_opinion primary key (usuario,empresa),
-	constraint fk_opi_usu foreign key (usuario) references usuarios,
-	constraint fk_opi_emp foreign key (empresa) references empresa
+create or replace table opinion
+(
+	usuario varchar(35) references usuarios (id),
+	empresa integer references empresa (id), 
+	comentario varchar (255), 
+	certificado tinyint(1), 
+	opinionProfesor varchar(128), 
+	constraint pk_opinion  primary key (usuario, empresa)
 );
 
-create table imagenes (
+create table imagenes
+(
 	indice integer primary key auto_increment,
 	empresa integer not null,
 	rutaimagen varchar(255)
-	constraint fk_ima_emp foreign key (empresa) references empresa
+	constraint fk_ima_emp foreign key (empresa) references empresa (id)
 );
 
-create table puesto (
-	empresa integer ,
+alter table empresa
+add constraint fk_emp_ima
+foreign key (imagenPricipal)
+references imagenes (indice);
+
+create or replace table imagenes
+(
+	indice integer primary key auto_increment,
+	empresa integer not null references empresa (numEmpresa),
+	rutaImagen varchar(255)
+);
+
+create table puesto
+(
+	empresa integer,
 	id integer,
 	nombre varchar(10),
 	descripcion varchar(255),
 	constraint pk_puesto primary key (empresa,id),
-	constraint fk_pue_emp foreign key (empresa) references empresa
+	constraint fk_pue_emp foreign key (empresa) references empresa (id)
 );
 
-create table requisito (
-	empresa integer,
+create or replace table puesto
+(
+	empresa integer not null references empresa (numEmpresa),
+	id integer primary key,
+	nombre varchar(10),
+	descripcion varchar(255)
+);
+
+create table requisito
+(
 	puesto integer,
 	id integer not null,
 	descripcion varchar(255),
-	constraint pk_requisito primary key (empresa,puesto,id),
-	constraint fk_requisito foreign key (empresa,puesto) references puesto
+	constraint pk_requisito primary key (puesto,id),
+	constraint fk_requisito foreign key (puesto) references puesto
 );
-
-
-commit;
-
-
-
- 
-create or replace table valoracion (usuario varchar(35) references usuarios (id), empresa integer references empresa (numEmpresa), valoracion integer, constraint pk_valoracion primary key (usuario, empresa));
-create or replace table opinion (usuario varchar(35) references usuarios (id), empresa integer references empresa (id), comentario varchar (255), certificado boolean, opinionProfesor varchar(128), constraint pk_opinion  primary key (usuario, empresa));
-
-create or replace table imagenes (indice integer primary key auto_increment,empresa integer not null references empresa (numEmpresa), rutaImagen varchar(255));
-create or replace table puesto (empresa integer not null references empresa (numEmpresa), id integer primary key, nombre varchar(10), descripcion varchar(255));
-
 create or replace table requisito (empresa integer not null references empresa (numEmpresa), puesto integer references puesto (id), id integer, descripcion varchar(255), constraint pk_requisito primary key (empresa, puesto, id));
 
+commit;
 
 DELIMITER /
 create or replace trigger noCrearDuplicado
