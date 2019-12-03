@@ -23,7 +23,7 @@ public class Search extends HttpServlet {
 		String firstInput=request.getParameter("name").toUpperCase();
 		ArrayList <Empresa> empresas=new ArrayList();
 		try {
-			c.ejecutar("select * from empresa where nombre like '%"+"%' or sector like '%"+"%'");
+			c.ejecutar("select * from empresa where upper(nombre) like '%"+"%' or sector like '%"+"%'");
 			ResultSet rst=c.getRset();
 			Empresa e;
 			while (rst.next())
@@ -43,7 +43,7 @@ public class Search extends HttpServlet {
 			ArrayList <String> imagenes=new ArrayList();
 			for (int i=0;i<empresas.size();i++)
 			{
-				c.ejecutar("select rutaimagen from imagenes where indice="+empresas.get(i).getImagenPrincipal()); //Importante hacerlo aquí, ya que si no no considero el parseo
+				c.ejecutar("select rutaimagen from imagenes where indice="+empresas.get(i).getImagenPrincipal()); //Importante hacerlo aquí, ya que si no, no considero el parseo
 				rst=c.getRset();
 				if (rst.next())
 					imagenes.add(rst.getString(2));
