@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -87,9 +86,6 @@
 				</div>
 			</article>
 		</section>
-
-	
-		
 		
 		<div class="modal fade" id="modalImage">
 			<div class="modal-dialog modal-sm">
