@@ -109,7 +109,14 @@ create table requisito
 	constraint pk_requisito primary key (puesto,id),
 	constraint fk_requisito foreign key (puesto) references puesto
 );
-create or replace table requisito (empresa integer not null references empresa (numEmpresa), puesto integer references puesto (id), id integer, descripcion varchar(255), constraint pk_requisito primary key (empresa, puesto, id));
+create or replace table requisito
+(
+	empresa integer not null references empresa (numEmpresa),
+	puesto integer references puesto (id),
+	id integer,
+	descripcion varchar(255),
+	constraint pk_requisito primary key (empresa, puesto, id)
+);
 
 commit;
 
