@@ -1,0 +1,21 @@
+¿Decidimos el dia entre nosotros, o se nos asigna?
+No está nada decidido de esto.
+
+¿Están decididos los horarios?
+No está decidido.
+
+¿Cuanto tiempo es el mínimo, y cuanto tiempo es el máximo de nuestra presentación?
+No hay un tiempo mínimo, el máximo es unos 20 minutos.
+
+¿Será con alumnos delante?
+Es posible, pero seguramente no.
+
+¿Se presenta documentación en esta presentación? En tal caso ¿Cual/Cuanta? ¿Toda? ¿MER? ¿Diagrama de clases? ¿Modelo de negocio? ¿Instrucciones de uso? ¿O una presentación (impress, powerpoint, video) de lo que posteriormente será la prueba funcional del proyecto?
+¿En la parte de la presentación funcional de mostrar el código, recalco las tecnologías y funciones extrañas o solo será que demuestre que se cambiar las cosas?
+Solo presentación, con las tecnologias usadas, capturas de código importante, cosas de empresa, y lineas de ampliación.
+En la presentación también habrás de demostrar que funciona
+
+¿Cual es la fecha de entrega?
+
+
+

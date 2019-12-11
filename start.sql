@@ -20,20 +20,20 @@ create table usuarios
 	fechanacimiento date,
 	correoelectronico varchar(200)
 );*/
-create or replace table usuarios
+create table usuarios
 (
 	id varchar(35) primary key, 
 	nombre varchar(100), 
 	apellidos varchar(120), 
 	pass varchar(200), 
 	cuentaActiva tinyint(1), 
-	rol varchar(8), 
+	rol varchar(10), 
 	fechanacimiento date,
 	correoelectronico varchar(200),
 	constraint ck_rol check (rol in ('Gestor','Profesor','Alumno'))
 );
 
-create or replace table empresa
+create table empresa
 (
 	id integer primary key auto_increment,
 	nombre varchar(50),
@@ -42,18 +42,18 @@ create or replace table empresa
 	resumen varchar(255),
 	ubicacion varchar(255),
 	imagenprincipal integer,
-	aprobada tinyint(1) --Este campo es para una ampliación
+	aprobada tinyint(1),
 );
 
 create table valoracion
 (
-	usuario varchar(35),
-	empresa integer,
+	usuario varchar(35) references usuarios (id),
+	empresa integer references empresas (id),
 	valoracion integer,
 	primary key (usuario,empresa)
 );
 
-create or replace table opinion
+create table opinion
 (
 	usuario varchar(35) references usuarios (id),
 	empresa integer references empresa (id), 
@@ -67,49 +67,27 @@ create table imagenes
 (
 	indice integer primary key auto_increment,
 	empresa integer not null,
-	rutaimagen varchar(255)
+	rutaimagen varchar(255),
 	constraint fk_ima_emp foreign key (empresa) references empresa (id)
 );
 
 alter table empresa
 add constraint fk_emp_ima
-foreign key (imagenPricipal)
+foreign key (imagenprincipal)
 references imagenes (indice);
-
-create or replace table imagenes
-(
-	indice integer primary key auto_increment,
-	empresa integer not null references empresa (numEmpresa),
-	rutaImagen varchar(255)
-);
 
 create table puesto
 (
 	empresa integer,
 	id integer,
-	nombre varchar(10),
+	nombre varchar(30),
 	descripcion varchar(255),
 	constraint pk_puesto primary key (empresa,id),
 	constraint fk_pue_emp foreign key (empresa) references empresa (id)
 );
 
-create or replace table puesto
-(
-	empresa integer not null references empresa (numEmpresa),
-	id integer primary key,
-	nombre varchar(10),
-	descripcion varchar(255)
-);
 
 create table requisito
-(
-	puesto integer,
-	id integer not null,
-	descripcion varchar(255),
-	constraint pk_requisito primary key (puesto,id),
-	constraint fk_requisito foreign key (puesto) references puesto
-);
-create or replace table requisito
 (
 	empresa integer not null references empresa (numEmpresa),
 	puesto integer references puesto (id),
@@ -121,7 +99,7 @@ create or replace table requisito
 commit;
 
 DELIMITER /
-create or replace trigger noCrearDuplicado
+create trigger noCrearDuplicado
 before insert on usuarios
 for each row
 begin
@@ -140,7 +118,7 @@ DELIMITER ;
 
 
 DELIMITER /
-create or replace trigger noActualizarDuplicado
+create trigger noActualizarDuplicado
 before update on usuarios
 for each row
 begin 
@@ -159,6 +137,10 @@ DELIMITER ;
 
 
 
-create view valoracionAlumno select avg(valoracion) where usuario in (select distinct id from usuarios where rol='Alumno') group by numEmpresa;
-create view valoracionProfesor select avg(valoracion) where usuario in (select distinct id from usuarios where rol='Profesor') group by numEmpresa;
-create view valoracionGestor select avg(valoracion) where usuario in (select distinct id from usuarios where rol='Gestor') group by numEmpresa;
+
+create view empresas as select * from empresa;
+
+create view notamedia as select avg(v.valoracion) nota,e.id, e.nombre from valoracion v, empresa e where e.id=v.empresa group by v.empresa order by nota desc; 
+create view notaestudiante as select avg(v.valoracion) nota,e.id, e.nombre from valoracion v, empresa e, usuarios u where e.id=v.empresa and u.id=v.usuario and rol='Estudiante' group by v.empresa order by nota desc;
+create view notaprofesor as select avg(v.valoracion) nota,e.id, e.nombre from valoracion v, empresa e, usuarios u where e.id=v.empresa and u.id=v.usuario and rol='Profesor' group by v.empresa order by nota desc;
+create view notagestor as select avg(v.valoracion) nota,e.id, e.nombre from valoracion v, empresa e, usuarios u where e.id=v.empresa and u.id=v.usuario and rol='Gestor' group by v.empresa order by nota desc;

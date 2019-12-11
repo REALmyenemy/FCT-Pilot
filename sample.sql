@@ -1,43 +1,111 @@
-insert into empresa values (null,'Empresa 1','Nombre 1','Representante 1','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 2','Nombre 2','Representante 2','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 3','Nombre 3','Representante 3','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 4','Nombre 4','Representante 4','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 5','Nombre 5','Representante 5','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 6','Nombre 6','Representante 6','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 7','Nombre 7','Representante 7','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 8','Nombre 8','Representante 8','Informatica','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 1','Nombre 1','Representante 1','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 2','Nombre 2','Representante 2','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 3','Nombre 3','Representante 3','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 4','Nombre 4','Representante 4','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 5','Nombre 5','Representante 5','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 6','Nombre 6','Representante 6','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 7','Nombre 7','Representante 7','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 8','Nombre 8','Representante 8','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 2','Nombre 2','Representante 2','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 3','Nombre 3','Representante 3','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 4','Nombre 4','Representante 4','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 5','Nombre 5','Representante 5','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 6','Nombre 6','Representante 6','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 7','Nombre 7','Representante 7','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
-insert into empresa values (null,'Empresa 8','Nombre 8','Representante 8','Diseño','Blablablablabal\nblablabla<br>asdasda','17/37.39941/-6.03549',1);
+insert into empresa values
+(
+	null,
+	'Empresa 1',
+	'Representante 1',
+	'Informatica',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/37.39941/-6.03549',
+	null,
+	1
+);
 
-insert into imagenes values (1,1,'1 - oeZC2K17cGJ4IZIRtAM45w.png');
-insert into imagenes values (1,2,'edificio - empresa2.jpg');
-insert into imagenes values (1,3,'56b6504105c5a.jpg');
-insert into imagenes values (1,4,'166474.png');
-insert into imagenes values (1,5,'439240.jpeg');
-insert into imagenes values (1,6,'1696130.jpg');
-insert into imagenes values (1,7,'21130159_ml.jpg');
-insert into imagenes values (1,8,'93938348.jpg	');
-insert into imagenes values (1,9,'deloitte_edificio_620x350.jpg');
-insert into imagenes values (1,10,'1414507335_175641_1414507465_noticia_normal.jpg');
-insert into imagenes values (1,11,'1436342982_179746_1436349126_noticia_normal.jpg');
-insert into imagenes values (1,12,'8758771512_8240954c62.jpg');
-insert into imagenes values (1,13,'14598769007897.jpg');
-insert into imagenes values (1,14,'Albasanz-16-Exterior-01.png');
-insert into imagenes values (1,15,'b3e1c28d4b0b522589caa965bdab4e94.jpg');
-insert into imagenes values (1,16,'Captura-de-pantalla-2018-10-08-a-las-13.33.28.png');
+insert into empresa values
+(
+	null,
+	'Empresa 2',
+	'Representante 2',
+	'Telecomunicaciones',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/36.39941/-6.05549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 3',
+	'Representante 3',
+	'Gestoria',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/37.39041/-6.53549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 4',
+	'Representante 4',
+	'Publicidad',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'16/37.3031/-2.03549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 5',
+	'Representante 5',
+	'Sanidad',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'14/37.39941/-6.03549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 6',
+	'Representante 6',
+	'Transportes',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/40.39941/-1.03549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 7',
+	'Representante 7',
+	'Comercio',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/37.39041/-6.03549',
+	null,
+	1
+);
+insert into empresa values
+(
+	null,
+	'Empresa 8',
+	'Representante 8',
+	'Jardineria',
+	'Blablablablabal\nblablabla<br>asdasda',
+	'17/37.39941/-6.03549',
+	null,
+	1
+);
+
+
+
+insert into imagenes values (null,1,'1 - oeZC2K17cGJ4IZIRtAM45w.png');
+insert into imagenes values (null,2,'edificio - empresa2.jpg');
+insert into imagenes values (null,3,'56b6504105c5a.jpg');
+insert into imagenes values (null,4,'166474.png');
+insert into imagenes values (null,5,'439240.jpeg');
+insert into imagenes values (null,6,'1696130.jpg');
+insert into imagenes values (null,7,'21130159_ml.jpg');
+insert into imagenes values (null,8,'93938348.jpg	');
+insert into imagenes values (null,9,'deloitte_edificio_620x350.jpg');
+insert into imagenes values (null,10,'1414507335_175641_1414507465_noticia_normal.jpg');
+insert into imagenes values (null,11,'1436342982_179746_1436349126_noticia_normal.jpg');
+insert into imagenes values (null,12,'8758771512_8240954c62.jpg');
+insert into imagenes values (null,13,'14598769007897.jpg');
+insert into imagenes values (null,14,'Albasanz-16-Exterior-01.png');
+insert into imagenes values (null,15,'b3e1c28d4b0b522589caa965bdab4e94.jpg');
+insert into imagenes values (null,16,'Captura-de-pantalla-2018-10-08-a-las-13.33.28.png');
 
 
 insert into puesto values (10, 1, 'Health Coach II', null);
@@ -92,306 +160,306 @@ insert into puesto values (5, 49, 'Paralegal', null);
 insert into puesto values (11, 50, 'Director of Sales', null);
 
 
-insert into requisito values (6, 1, null);
-insert into requisito values (25, 2, null);
-insert into requisito values (46, 3, null);
-insert into requisito values (14, 4, null);
-insert into requisito values (39, 5, null);
-insert into requisito values (24, 6, null);
-insert into requisito values (20, 7, null);
-insert into requisito values (3, 8, null);
-insert into requisito values (5, 9, null);
-insert into requisito values (4, 10, null);
-insert into requisito values (30, 11, null);
-insert into requisito values (17, 12, null);
-insert into requisito values (5, 13, null);
-insert into requisito values (49, 14, null);
-insert into requisito values (39, 15, null);
-insert into requisito values (1, 16, null);
-insert into requisito values (27, 17, null);
-insert into requisito values (16, 18, null);
-insert into requisito values (41, 19, null);
-insert into requisito values (13, 20, null);
-insert into requisito values (47, 21, null);
-insert into requisito values (22, 22, null);
-insert into requisito values (43, 23, null);
-insert into requisito values (32, 24, null);
-insert into requisito values (33, 25, null);
-insert into requisito values (17, 26, null);
-insert into requisito values (27, 27, null);
-insert into requisito values (37, 28, null);
-insert into requisito values (40, 29, null);
-insert into requisito values (5, 30, null);
-insert into requisito values (37, 31, null);
-insert into requisito values (2, 32, null);
-insert into requisito values (30, 33, null);
-insert into requisito values (5, 34, null);
-insert into requisito values (1, 35, null);
-insert into requisito values (22, 36, null);
-insert into requisito values (41, 37, null);
-insert into requisito values (25, 38, null);
-insert into requisito values (45, 39, null);
-insert into requisito values (20, 40, null);
-insert into requisito values (11, 41, null);
-insert into requisito values (39, 42, null);
-insert into requisito values (14, 43, null);
-insert into requisito values (4, 44, null);
-insert into requisito values (18, 45, null);
-insert into requisito values (10, 46, null);
-insert into requisito values (23, 47, null);
-insert into requisito values (38, 48, null);
-insert into requisito values (45, 49, null);
-insert into requisito values (21, 50, null);
-insert into requisito values (26, 51, null);
-insert into requisito values (49, 52, null);
-insert into requisito values (31, 53, null);
-insert into requisito values (13, 54, null);
-insert into requisito values (1, 55, null);
-insert into requisito values (45, 56, null);
-insert into requisito values (2, 57, null);
-insert into requisito values (36, 58, null);
-insert into requisito values (19, 59, null);
-insert into requisito values (13, 60, null);
-insert into requisito values (45, 61, null);
-insert into requisito values (9, 62, null);
-insert into requisito values (44, 63, null);
-insert into requisito values (17, 64, null);
-insert into requisito values (34, 65, null);
-insert into requisito values (7, 66, null);
-insert into requisito values (13, 67, null);
-insert into requisito values (12, 68, null);
-insert into requisito values (34, 69, null);
-insert into requisito values (28, 70, null);
-insert into requisito values (7, 71, null);
-insert into requisito values (49, 72, null);
-insert into requisito values (19, 73, null);
-insert into requisito values (15, 74, null);
-insert into requisito values (24, 75, null);
-insert into requisito values (34, 76, null);
-insert into requisito values (48, 77, null);
-insert into requisito values (6, 78, null);
-insert into requisito values (12, 79, null);
-insert into requisito values (20, 80, null);
-insert into requisito values (27, 81, null);
-insert into requisito values (21, 82, null);
-insert into requisito values (12, 83, null);
-insert into requisito values (35, 84, null);
-insert into requisito values (15, 85, null);
-insert into requisito values (11, 86, null);
-insert into requisito values (47, 87, null);
-insert into requisito values (32, 88, null);
-insert into requisito values (27, 89, null);
-insert into requisito values (30, 90, null);
-insert into requisito values (32, 91, null);
-insert into requisito values (32, 92, null);
-insert into requisito values (20, 93, null);
-insert into requisito values (5, 94, null);
-insert into requisito values (46, 95, null);
-insert into requisito values (36, 96, null);
-insert into requisito values (12, 97, null);
-insert into requisito values (29, 98, null);
-insert into requisito values (41, 99, null);
-insert into requisito values (20, 100, null);
-insert into requisito values (15, 101, null);
-insert into requisito values (15, 102, null);
-insert into requisito values (20, 103, null);
-insert into requisito values (39, 104, null);
-insert into requisito values (25, 105, null);
-insert into requisito values (29, 106, null);
-insert into requisito values (36, 107, null);
-insert into requisito values (11, 108, null);
-insert into requisito values (15, 109, null);
-insert into requisito values (29, 110, null);
-insert into requisito values (26, 111, null);
-insert into requisito values (20, 112, null);
-insert into requisito values (40, 113, null);
-insert into requisito values (25, 114, null);
-insert into requisito values (19, 115, null);
-insert into requisito values (24, 116, null);
-insert into requisito values (17, 117, null);
-insert into requisito values (15, 118, null);
-insert into requisito values (34, 119, null);
-insert into requisito values (6, 120, null);
-insert into requisito values (41, 121, null);
-insert into requisito values (6, 122, null);
-insert into requisito values (27, 123, null);
-insert into requisito values (24, 124, null);
-insert into requisito values (2, 125, null);
-insert into requisito values (22, 126, null);
-insert into requisito values (30, 127, null);
-insert into requisito values (38, 128, null);
-insert into requisito values (10, 129, null);
-insert into requisito values (4, 130, null);
-insert into requisito values (19, 131, null);
-insert into requisito values (35, 132, null);
-insert into requisito values (18, 133, null);
-insert into requisito values (29, 134, null);
-insert into requisito values (40, 135, null);
-insert into requisito values (8, 136, null);
-insert into requisito values (38, 137, null);
-insert into requisito values (47, 138, null);
-insert into requisito values (21, 139, null);
-insert into requisito values (29, 140, null);
-insert into requisito values (34, 141, null);
-insert into requisito values (46, 142, null);
-insert into requisito values (7, 143, null);
-insert into requisito values (50, 144, null);
-insert into requisito values (31, 145, null);
-insert into requisito values (45, 146, null);
-insert into requisito values (23, 147, null);
-insert into requisito values (33, 148, null);
-insert into requisito values (1, 149, null);
-insert into requisito values (28, 150, null);
-insert into requisito values (10, 151, null);
-insert into requisito values (11, 152, null);
-insert into requisito values (34, 153, null);
-insert into requisito values (49, 154, null);
-insert into requisito values (24, 155, null);
-insert into requisito values (10, 156, null);
-insert into requisito values (29, 157, null);
-insert into requisito values (2, 158, null);
-insert into requisito values (7, 159, null);
-insert into requisito values (8, 160, null);
-insert into requisito values (16, 161, null);
-insert into requisito values (29, 162, null);
-insert into requisito values (37, 163, null);
-insert into requisito values (43, 164, null);
-insert into requisito values (23, 165, null);
-insert into requisito values (28, 166, null);
-insert into requisito values (19, 167, null);
-insert into requisito values (50, 168, null);
-insert into requisito values (24, 169, null);
-insert into requisito values (45, 170, null);
-insert into requisito values (33, 171, null);
-insert into requisito values (5, 172, null);
-insert into requisito values (48, 173, null);
-insert into requisito values (38, 174, null);
-insert into requisito values (18, 175, null);
-insert into requisito values (15, 176, null);
-insert into requisito values (19, 177, null);
-insert into requisito values (31, 178, null);
-insert into requisito values (6, 179, null);
-insert into requisito values (42, 180, null);
-insert into requisito values (6, 181, null);
-insert into requisito values (14, 182, null);
-insert into requisito values (32, 183, null);
-insert into requisito values (29, 184, null);
-insert into requisito values (36, 185, null);
-insert into requisito values (4, 186, null);
-insert into requisito values (7, 187, null);
-insert into requisito values (49, 188, null);
-insert into requisito values (10, 189, null);
-insert into requisito values (14, 190, null);
-insert into requisito values (3, 191, null);
-insert into requisito values (30, 192, null);
-insert into requisito values (32, 193, null);
-insert into requisito values (28, 194, null);
-insert into requisito values (24, 195, null);
-insert into requisito values (1, 196, null);
-insert into requisito values (31, 197, null);
-insert into requisito values (27, 198, null);
-insert into requisito values (24, 199, null);
-insert into requisito values (19, 200, null);
-insert into requisito values (28, 201, null);
-insert into requisito values (28, 202, null);
-insert into requisito values (39, 203, null);
-insert into requisito values (46, 204, null);
-insert into requisito values (24, 205, null);
-insert into requisito values (7, 206, null);
-insert into requisito values (16, 207, null);
-insert into requisito values (25, 208, null);
-insert into requisito values (25, 209, null);
-insert into requisito values (29, 210, null);
-insert into requisito values (15, 211, null);
-insert into requisito values (37, 212, null);
-insert into requisito values (8, 213, null);
-insert into requisito values (11, 214, null);
-insert into requisito values (7, 215, null);
-insert into requisito values (17, 216, null);
-insert into requisito values (1, 217, null);
-insert into requisito values (15, 218, null);
-insert into requisito values (32, 219, null);
-insert into requisito values (21, 220, null);
-insert into requisito values (41, 221, null);
-insert into requisito values (7, 222, null);
-insert into requisito values (16, 223, null);
-insert into requisito values (15, 224, null);
-insert into requisito values (34, 225, null);
-insert into requisito values (22, 226, null);
-insert into requisito values (10, 227, null);
-insert into requisito values (40, 228, null);
-insert into requisito values (46, 229, null);
-insert into requisito values (5, 230, null);
-insert into requisito values (6, 231, null);
-insert into requisito values (40, 232, null);
-insert into requisito values (45, 233, null);
-insert into requisito values (27, 234, null);
-insert into requisito values (31, 235, null);
-insert into requisito values (9, 236, null);
-insert into requisito values (21, 237, null);
-insert into requisito values (33, 238, null);
-insert into requisito values (25, 239, null);
-insert into requisito values (4, 240, null);
-insert into requisito values (25, 241, null);
-insert into requisito values (48, 242, null);
-insert into requisito values (29, 243, null);
-insert into requisito values (29, 244, null);
-insert into requisito values (24, 245, null);
-insert into requisito values (16, 246, null);
-insert into requisito values (23, 247, null);
-insert into requisito values (18, 248, null);
-insert into requisito values (5, 249, null);
-insert into requisito values (38, 250, null);
-insert into requisito values (16, 251, null);
-insert into requisito values (6, 252, null);
-insert into requisito values (26, 253, null);
-insert into requisito values (11, 254, null);
-insert into requisito values (49, 255, null);
-insert into requisito values (24, 256, null);
-insert into requisito values (18, 257, null);
-insert into requisito values (44, 258, null);
-insert into requisito values (11, 259, null);
-insert into requisito values (30, 260, null);
-insert into requisito values (3, 261, null);
-insert into requisito values (11, 262, null);
-insert into requisito values (25, 263, null);
-insert into requisito values (42, 264, null);
-insert into requisito values (6, 265, null);
-insert into requisito values (31, 266, null);
-insert into requisito values (41, 267, null);
-insert into requisito values (32, 268, null);
-insert into requisito values (31, 269, null);
-insert into requisito values (7, 270, null);
-insert into requisito values (20, 271, null);
-insert into requisito values (38, 272, null);
-insert into requisito values (10, 273, null);
-insert into requisito values (41, 274, null);
-insert into requisito values (42, 275, null);
-insert into requisito values (13, 276, null);
-insert into requisito values (16, 277, null);
-insert into requisito values (3, 278, null);
-insert into requisito values (14, 279, null);
-insert into requisito values (22, 280, null);
-insert into requisito values (39, 281, null);
-insert into requisito values (24, 282, null);
-insert into requisito values (20, 283, null);
-insert into requisito values (10, 284, null);
-insert into requisito values (4, 285, null);
-insert into requisito values (25, 286, null);
-insert into requisito values (23, 287, null);
-insert into requisito values (8, 288, null);
-insert into requisito values (12, 289, null);
-insert into requisito values (35, 290, null);
-insert into requisito values (43, 291, null);
-insert into requisito values (5, 292, null);
-insert into requisito values (30, 293, null);
-insert into requisito values (23, 294, null);
-insert into requisito values (43, 295, null);
-insert into requisito values (19, 296, null);
-insert into requisito values (2, 297, null);
-insert into requisito values (37, 298, null);
-insert into requisito values (49, 299, null);
-insert into requisito values (40, 300, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 10, 1, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 26, 2, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 21, 3, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 26, 4, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 26, 5, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 26, 6, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 49, 7, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 26, 8, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 24, 9, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 26, 10, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 24, 11, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 15, 12, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 27, 13, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 49, 14, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 44, 15, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 24, 16, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 8, 17, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 12, 18, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 40, 19, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 10, 20, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 31, 21, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 27, 22, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 2, 23, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 6, 24, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 32, 25, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 15, 26, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 12, 27, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 37, 28, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 42, 29, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 46, 30, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 8, 31, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 49, 32, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 15, 33, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 15, 34, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 40, 35, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 4, 36, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 12, 37, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 13, 38, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 2, 39, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 20, 40, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 2, 41, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 27, 42, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 37, 43, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 49, 44, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 26, 45, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 37, 46, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 42, 47, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 32, 48, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 10, 49, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 13, 50, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 40, 51, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 27, 52, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 42, 53, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 22, 54, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 37, 55, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 24, 56, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 20, 57, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 7, 58, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 12, 59, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 46, 60, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 40, 61, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 37, 62, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 10, 63, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 13, 64, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 40, 65, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 42, 66, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 37, 67, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 10, 68, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 22, 69, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 27, 70, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 44, 71, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 22, 72, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 1, 73, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 7, 74, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 29, 75, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 27, 76, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 28, 77, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 1, 78, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 10, 79, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 27, 80, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 42, 81, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 10, 82, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 4, 83, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 8, 84, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 46, 85, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 28, 86, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 49, 87, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 22, 88, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 6, 89, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 33, 90, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 15, 91, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 49, 92, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 20, 93, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 2, 94, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 21, 95, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 42, 96, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 42, 97, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 27, 98, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 46, 99, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 28, 100, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 26, 101, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 12, 102, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 31, 103, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 10, 104, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 1, 105, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 46, 106, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 2, 107, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 13, 108, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 22, 109, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 20, 110, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 32, 111, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 26, 112, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 7, 113, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 21, 114, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 10, 115, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 2, 116, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 42, 117, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 20, 118, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 26, 119, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 37, 120, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 8, 121, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 49, 122, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 6, 123, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 49, 124, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 13, 125, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 15, 126, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 44, 127, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 8, 128, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 15, 129, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 20, 130, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 22, 131, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 24, 132, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 6, 133, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 46, 134, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 29, 135, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 21, 136, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 8, 137, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 15, 138, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 26, 139, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 27, 140, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 1, 141, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 28, 142, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 21, 143, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 22, 144, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 29, 145, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 46, 146, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 15, 147, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 24, 148, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 28, 149, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 46, 150, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 22, 151, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 4, 152, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 13, 153, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 8, 154, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 6, 155, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 42, 156, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 44, 157, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 13, 158, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 4, 159, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 4, 160, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 4, 161, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 20, 162, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 10, 163, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 27, 164, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 27, 165, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 40, 166, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 22, 167, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 32, 168, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 12, 169, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 10, 170, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 13, 171, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 12, 172, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 7, 173, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 15, 174, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 33, 175, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 2, 176, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 13, 177, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 42, 178, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 28, 179, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 2, 180, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 13, 181, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 28, 182, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 7, 183, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 26, 184, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 42, 185, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 20, 186, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 10, 187, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 46, 188, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 12, 189, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 32, 190, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 10, 191, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 4, 192, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 10, 193, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 44, 194, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 13, 195, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 21, 196, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 7, 197, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 6, 198, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 26, 199, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 4, 200, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 37, 201, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 37, 202, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 13, 203, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 44, 204, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 42, 205, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 1, 206, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 29, 207, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 26, 208, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 8, 209, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 28, 210, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 31, 211, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 4, 212, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 49, 213, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 49, 214, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 7, 215, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 21, 216, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 42, 217, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 10, 218, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 2, 219, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 26, 220, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 29, 221, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 28, 222, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 12, 223, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 44, 224, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 24, 225, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 13, 226, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 6, 227, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 12, 228, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 21, 229, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 42, 230, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 15, 231, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 24, 232, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 10, 233, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 37, 234, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 28, 235, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 46, 236, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 4, 237, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 44, 238, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 42, 239, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 12, 240, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 31, 241, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 49, 242, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 13, 243, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 46, 244, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 21, 245, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 1, 246, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 29, 247, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 46, 248, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 31, 249, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 46, 250, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 21, 251, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 42, 252, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 13, 253, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 4, 254, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 33, 255, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 15, 256, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 10, 257, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 26, 258, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 31, 259, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 37, 260, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 2, 261, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 46, 262, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 44, 263, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 29, 264, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 28, 265, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 40, 266, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 12, 267, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 28, 268, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 2, 269, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 37, 270, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 32, 271, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 8, 272, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 37, 273, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 28, 274, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 21, 275, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 12, 276, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 26, 277, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 12, 278, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 33, 279, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 44, 280, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 37, 281, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 28, 282, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 24, 283, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 40, 284, null);
+insert into requisito (empresa, puesto, id, descripcion) values (3, 10, 285, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 37, 286, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 1, 287, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 29, 288, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 28, 289, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 21, 290, null);
+insert into requisito (empresa, puesto, id, descripcion) values (5, 44, 291, null);
+insert into requisito (empresa, puesto, id, descripcion) values (4, 40, 292, null);
+insert into requisito (empresa, puesto, id, descripcion) values (9, 1, 293, null);
+insert into requisito (empresa, puesto, id, descripcion) values (10, 49, 294, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 24, 295, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 31, 296, null);
+insert into requisito (empresa, puesto, id, descripcion) values (6, 44, 297, null);
+insert into requisito (empresa, puesto, id, descripcion) values (11, 6, 298, null);
+insert into requisito (empresa, puesto, id, descripcion) values (7, 4, 299, null);
+insert into requisito (empresa, puesto, id, descripcion) values (8, 37, 300, null);
 
 
 insert into usuarios (id, nombre, apellidos, pass, cuentaactiva, rol, fechanacimiento, correoelectronico) values ('cmathes0', 'Cathy', 'Mathes', 'b5Wfkblmvb', 1, 'Profesor', '1999-01-08 23:58:16', 'cmathes0@cpanel.net');
