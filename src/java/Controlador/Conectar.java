@@ -41,5 +41,19 @@ public class Conectar
     {
         return rset;
     }
+	
+	public boolean closeResultset(ResultSet rst)
+	{
+		try
+		{
+			if (!rst.isClosed())
+				rst.close();
+			return true;
+		}
+		catch (SQLException e)
+		{
+			return false;
+		}
+	}
     
 }
