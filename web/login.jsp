@@ -48,6 +48,7 @@
 				<div class="row"><div class="col-sm-4">Nombre&nbsp;</div> <input type="text" name="name" id="name" class="col-sm-6" pattern="\D*" /></div>
 				<div class="row"><div class="col-sm-4">Apellido/s&nbsp;</div> <input type="text" name="lastname" id="lastname" class="col-sm-6" pattern="\D*" /></div>
 				<div class="row"><div class="col-sm-4">Fecha nacimiento: *&nbsp;</div> <input type="date" name="birth" id="birth" required="required" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4">E-Mail: *&nbsp;</div> <input type="mail" name="mail" id="mail" class="col-sm-6" /></div>
 				
 				<div class="row"><input type="checkbox" required="required" name="privacy" id="privacy" class="col-sm-1" /><label for="privacy" class="col-sm-11">Pulsa aqu&iacute; para confirmar que has leido y aceptado <a href="privacy.html" target="_blank">los terminos de privacidad</a>.</label></div>
 				<input type="submit" value="Darse de alta" />

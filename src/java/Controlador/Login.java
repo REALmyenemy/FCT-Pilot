@@ -94,7 +94,34 @@ public class Login extends HttpServlet {
 	
 	private void login (String user, HttpServletRequest request, HttpServletResponse response)
 	{
-		
+		try
+		{
+			String password=request.getParameter("pass");
+			HttpSession session = request.getSession();
+			PreparedStatement ps = conn.prepareStatement("select id from usuarios where password=? and id=?"); //Sí, vuelvo a buscar con los datos al revés, por seguridad
+			ps.setString(0,password);
+			ps.setString(1,user);
+			
+			ResultSet rs=ps.executeQuery();
+			if (rs.next())
+			{
+				session.setAttribute("loginUser", user);
+				response.sendRedirect("index.jsp");
+			}
+			else
+			{
+				throw new SQLException(); //Salta al catch
+			}
+			
+		} catch (SQLException ex) {
+			loginFail(request,response,"Contraseña equivocada"); // !! Eventualmente cambiaré el mensaje por privacidad
+		} catch (IOException ex) {
+			try {
+				response.sendRedirect("404.jsp");
+			} catch (IOException ex1) {
+				
+			}
+		}
 	}
 
 	
