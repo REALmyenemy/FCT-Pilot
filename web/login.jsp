@@ -1,3 +1,4 @@
+<%@page import="Controlador.Conectar"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!DOCTYPE html>
@@ -10,13 +11,20 @@
 		<title>FCT pilot</title>
 	</head>
     <body id="loginPage">
-		<c:choose >
-			<c:when test="${sessionScope.loginUser != null}" >
 		<header class="container empty"><a href="index.jsp"><img class="logo" src="img/header.png"></a></header>
-				<c:if scope="session" test="loginerr">
-			<p></p>
-				</c:if>
-		<p id="loginError"></p>
+		<%
+		HttpSession s=request.getSession();
+		if(s.getAttribute("loginerr")!=null)
+		{ %>
+		<p class="error" id="loginError"></p>	
+		<%
+		}
+
+		Conectar c=new Conectar();
+		c.ejecutar("select * from usuarios");
+		%>
+		
+		
         <div class="container-fluid row curhead">
 			<form class="container col-md-5" method="post" action="Login">
 				<h3>Usuario registrado</h3>
@@ -57,12 +65,6 @@
 			</form>	
 			
 		</div>
-		</c:when>
-		<c:otherwise>
-			<jsp:forward page="index.jsp"></jsp:forward>
-		</c:otherwise>
-		</c:choose>
-		
 		<div class="hidden">
 			<link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 

@@ -42,7 +42,7 @@ create table empresa
 	resumen varchar(255),
 	ubicacion varchar(255),
 	imagenprincipal integer,
-	aprobada tinyint(1),
+	aprobada tinyint(1)
 );
 
 create table valoracion

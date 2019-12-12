@@ -21,7 +21,7 @@ public class Conectar
         try {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fctpilot","fctPilot","fctPilot");
             statement = connection.createStatement();
-        } catch (SQLException e) {   }
+        } catch (SQLException e) { System.err.println("\n\n\n !!!!! AAAAAAAAA\n\nTe has dejado el driver\n\n"+e.getMessage()+"\n\n\n s'acabó"); }
     }
     
     public Connection getConn()

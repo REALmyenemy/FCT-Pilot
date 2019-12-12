@@ -38,13 +38,20 @@ public class Register extends HttpServlet {
 			String birth=request.getParameter("birth");
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm.");
 			HttpSession session = request.getSession();
-			Date birthdate;
+			GregorianCalendar birthdate=new GregorianCalendar();
 			try {
-				birthdate =sdf.parse(birth);
+				birthdate.setTime(sdf.parse(birth));
+				
 			} catch (ParseException ex) {
 				session.setAttribute("loginerr", "Fecha de nacimiento es obligatoria");
 				response.sendRedirect("login.jsp");
 			}
+			if (birthdate.after(new GregorianCalendar().getTime()))
+			{
+				session.setAttribute("loginerr", "No aceptamos a viajeros del tiempo.");
+				response.sendRedirect("login.jsp");
+			}
+			
 			String mail=request.getParameter("mail");
 			
 			if (username==null||pass==null||username.equals(pass)||username.equals("")||pass.equals(""))
@@ -77,20 +84,15 @@ public class Register extends HttpServlet {
 				ps.setString(3, pass);
 				ps.setInt	(4,	1);
 				ps.setString(5,	"Estudiante");
-				ps.setDate(6, (javax.SQL.Date)birthdate.getTime());
+				
+				ps.setDate(6, new java.sql.Date(birthdate.getTimeInMillis()));
 				ps.setString(7,mail);
+				ps.executeUpdate();
+				
+				
+				
 			}
-			/*
-			c.lanzar("insert into usuarios values('"
-				+request.getParameter("rusu")+"','"
-				+request.getParameter("rpass")+"','"
-				+request.getParameter("name")+"','"
-				+request.getParameter("lastname")
-				+"',TRUE,"
-				+ "'Estudiante','"
-				+request.getParameter("birth")+
-			"')");
-			*/
+			
 		} catch (SQLException ex) {
 			
 		}
