@@ -31,6 +31,9 @@ public class Conectar
     
     public void ejecutar(String sql) throws SQLException
     {
+        if (statement==null||statement.isClosed())
+            statement=connection.createStatement();
+        
         rset=statement.executeQuery(sql);
     }
 	public void lanzar(String sql) throws SQLException

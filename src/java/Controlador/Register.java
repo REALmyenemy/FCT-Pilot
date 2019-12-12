@@ -1,104 +1,76 @@
 package Controlador;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import java.util.GregorianCalendar;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.io.*;
+import java.sql.*;
+import java.text.*;
+import java.util.*;
+import java.util.logging.*;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
+
+import Modelo.Usuario;
 
 
 @WebServlet(name = "Register", urlPatterns = {"/Register"})
 public class Register extends HttpServlet {
 
-	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-			Conectar c=new Conectar();
-			
-		try {
-			
+	protected void processRequest(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
+		HttpSession session=request.getSession();
+		if (!session.isNew() && request.getSession().getAttribute("loginUser") != null) 
+		{
+			response.sendRedirect("index.jsp");
+		}
+		else
+		{
+			UsuarioControlador uc=new UsuarioControlador();
 			String username=request.getParameter("usu");
 			
-			String pass=request.getParameter("pass");
-			String name=request.getParameter("name");
-			String surname=request.getParameter("lastname");
-			String birth=request.getParameter("birth");
-			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm.");
-			HttpSession session = request.getSession();
-			GregorianCalendar birthdate=new GregorianCalendar();
-			try {
-				birthdate.setTime(sdf.parse(birth));
-				
-			} catch (ParseException ex) {
-				session.setAttribute("loginerr", "Fecha de nacimiento es obligatoria");
-				response.sendRedirect("login.jsp");
-			}
-			if (birthdate.after(new GregorianCalendar().getTime()))
+			uc.setId(username);
+			
+			try
 			{
-				session.setAttribute("loginerr", "No aceptamos a viajeros del tiempo.");
-				response.sendRedirect("login.jsp");
-			}
-			
-			String mail=request.getParameter("mail");
-			
-			if (username==null||pass==null||username.equals(pass)||username.equals("")||pass.equals(""))
-			{
-				session.setAttribute("loginerr", "Rellena los campos obligatorios");
-				response.sendRedirect("login.jsp");
-			}
-			if (username.length()>34)
-			{
-				session.setAttribute("loginerr", "Usuario demasiado largo");
-				response.sendRedirect("login.jsp");
-			}
-			
-			
-			c.ejecutar("select * from usuarios where id='"+username+"'");
-			
-			ResultSet rs=c.getRset();
-			
-			if (rs.next())
-			{
-				session.setAttribute("loginerr", "Usuario ya existente");
-				response.sendRedirect("login.jsp");
-			}
-			else
-			{
-				PreparedStatement ps = c.getConn().prepareStatement("insert into usuarios values(?,?,?,?,?,?,?,?)");
-				ps.setString(0, username);
-				ps.setString(1, name);
-				ps.setString(2,	surname);
-				ps.setString(3, pass);
-				ps.setInt	(4,	1);
-				ps.setString(5,	"Estudiante");
 				
-				ps.setDate(6, new java.sql.Date(birthdate.getTimeInMillis()));
-				ps.setString(7,mail);
-				ps.executeUpdate();
-				
-				
-				
+				if (!UsuarioControlador.checkExiste(username)) //<--!!!!!
+				{
+					String birth=request.getParameter("birth");
+					GregorianCalendar birthdate=UsuarioControlador.parseBirthday(birth);
+
+					if (!birthdate.before(new GregorianCalendar().getTime()))
+					{
+						uc.setNombre(request.getParameter("name"));	
+						uc.setApellidos(request.getParameter("lastname"));	
+						uc.setPass(request.getParameter("pass"));	
+						uc.setEmail(request.getParameter("mail"));	
+						uc.setActivo(1);
+						uc.setRol("Estudiante");
+						uc.setFnacimiento(new java.sql.Date(birthdate.getTimeInMillis()));
+						try
+						{
+							uc.crear();	
+						}
+						catch (Exception e)
+						{
+							System.out.println("Peto 1");
+						}
+
+					}
+				}
 			}
+			catch (Exception e)
+			{
+				System.out.println("Peto 2");
+			}
+
 			
-		} catch (SQLException ex) {
 			
 		}
 	}
 
-	// <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+	private void fallar(HttpServletResponse response, String mensage)
+	{
+		
+	}
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)

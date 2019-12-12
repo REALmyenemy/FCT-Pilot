@@ -16,13 +16,8 @@
 		HttpSession s=request.getSession();
 		if(s.getAttribute("loginerr")!=null)
 		{ %>
-		<p class="error" id="loginError"></p>	
-		<%
-		}
-
-		Conectar c=new Conectar();
-		c.ejecutar("select * from usuarios");
-		%>
+			<p class="error" id="loginError"></p>
+		<% }%>
 		
 		
         <div class="container-fluid row curhead">
@@ -46,19 +41,28 @@
 				<h3>Alta usuario</h3>
 				<hr class="hr" />
 				<p>Registro de datos</p>
-<!--				<p>Nombre de usuario *&nbsp; <input type="text" name="usu" id="rusu" required="requrired" /></p>
-				<p>Contrase&ntilde;a *&nbsp; <input type="password" name="pass" id="rpass" required="requrired" /></p>
-				<p>Nombre&nbsp; <input type="text" name="name" id="name" /></p>
-				<p>Apellido/s&nbsp; <input type="text" name="lastname" id="lastname" /></p>
-				<p>Fecha nacimiento: *&nbsp; <input type="date" name="birth" id="birth" required="requrired" /></p>-->
-				<div class="row"><div class="col-sm-4"> Nombre de usuario *&nbsp;</div> <input type="text" name="usu" id="rusu" required="required" class="col-sm-6" /></div>
-				<div class="row"><div class="col-sm-4">Contrase&ntilde;a *&nbsp;</div> <input type="password" name="pass" id="rpass" required="required" class="col-sm-6" /></div>
-				<div class="row"><div class="col-sm-4">Nombre&nbsp;</div> <input type="text" name="name" id="name" class="col-sm-6" pattern="\D*" /></div>
-				<div class="row"><div class="col-sm-4">Apellido/s&nbsp;</div> <input type="text" name="lastname" id="lastname" class="col-sm-6" pattern="\D*" /></div>
-				<div class="row"><div class="col-sm-4">Fecha nacimiento: *&nbsp;</div> <input type="date" name="birth" id="birth" required="required" class="col-sm-6" /></div>
-				<div class="row"><div class="col-sm-4">E-Mail: *&nbsp;</div> <input type="mail" name="mail" id="mail" class="col-sm-6" /></div>
+				<div class="row"><div class="col-sm-4"> Nombre de usuario *&nbsp;</div> 
+					<input type="text" name="usu" id="rusu" required="required" class="col-sm-6" />
+				</div>
+				<div class="row"><div class="col-sm-4">Contrase&ntilde;a *&nbsp;</div> 
+					<input type="password" name="pass" id="rpass" required="required" class="col-sm-6" />
+				</div>
+				<div class="row"><div class="col-sm-4">Nombre&nbsp;</div>
+					<input type="text" name="name" id="name" class="col-sm-6" pattern="\D*" />
+				</div>
+				<div class="row"><div class="col-sm-4">Apellido/s&nbsp;</div> 
+					<input type="text" name="lastname" id="lastname" class="col-sm-6" pattern="\D*" />
+				</div>
+				<div class="row"><div class="col-sm-4">Fecha nacimiento: *&nbsp;</div> 
+					<input type="date" name="birth" id="birth" required="required" class="col-sm-6" />
+				</div>
+				<div class="row"><div class="col-sm-4">E-Mail: *&nbsp;</div> 
+					<input type="text" name="mail" id="mail" class="col-sm-6" required="required" />
+				</div>
 				
-				<div class="row"><input type="checkbox" required="required" name="privacy" id="privacy" class="col-sm-1" /><label for="privacy" class="col-sm-11">Pulsa aqu&iacute; para confirmar que has leido y aceptado <a href="privacy.html" target="_blank">los terminos de privacidad</a>.</label></div>
+				<div class="row">
+					<input type="checkbox" required="required" name="privacy" id="privacy" class="col-sm-1" /><label for="privacy" class="col-sm-11">Pulsa aqu&iacute; para confirmar que has leido y aceptado <a href="privacy.html" target="_blank">los terminos de privacidad</a>.</label>
+				</div>
 				<input type="submit" value="Darse de alta" />
 				
 

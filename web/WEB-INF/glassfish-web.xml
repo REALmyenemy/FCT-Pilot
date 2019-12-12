@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Servlet 3.0//EN" "http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
-<glassfish-web-app error-url="">
+<glassfish-web-app error-url="error.jsp">
   <context-root>/FCT_Pilot</context-root>
   <class-loader delegate="true"/>
   <jsp-config>
@@ -8,13 +8,13 @@
       <description>Keep a copy of the generated servlet class' java code.</description>
     </property>
   </jsp-config>
-	<session-config>
-		<session-timeout>30</session-timeout>
-    </session-config>
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-	</welcome-file-list>
-	<error-page>
-        <location>404.jsp</location>
-    </error-page>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <location>404.jsp</location>
+  </error-page>
 </glassfish-web-app>
