@@ -31,7 +31,7 @@ public class Register extends HttpServlet {
 			try
 			{
 				
-				if (!UsuarioControlador.checkExiste(username)) //<--!!!!!
+				if (!UsuarioControlador.checkExiste(username))
 				{
 					String birth=request.getParameter("birth");
 					GregorianCalendar birthdate=UsuarioControlador.parseBirthday(birth);
@@ -67,11 +67,6 @@ public class Register extends HttpServlet {
 		}
 	}
 
-	private void fallar(HttpServletResponse response, String mensage)
-	{
-		
-	}
-
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -89,6 +84,6 @@ public class Register extends HttpServlet {
 	@Override
 	public String getServletInfo() {
 		return "Short description";
-	}// </editor-fold>
+	}
 
 }

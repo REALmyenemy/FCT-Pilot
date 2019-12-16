@@ -118,6 +118,11 @@ public class Usuario
 	 */
 	public void setFnacimiento(Date fnacimiento) {
 		this.fnacimiento = fnacimiento;
-	}	
+	}
+
+	public void setFnacimiento(String fnacimiento)
+	{
+		this.fnacimiento=Date.valueOf(fnacimiento);
+	}
 	
 }

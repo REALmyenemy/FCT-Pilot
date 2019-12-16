@@ -1,6 +1,7 @@
 package Controlador;
 
 import Controlador.Excepciones.NotOldEnoughException;
+import Controlador.Excepciones.UsuarioBaneadoException;
 import Modelo.Usuario;
 import java.sql.Connection;
 import java.sql.Date;
@@ -58,6 +59,7 @@ public class UsuarioControlador extends Usuario
 		PreparedStatement insert=conn.prepareStatement("insert into usuarios values(?,?,?,?,?,?,?,?)");
 		GregorianCalendar thirteen = new GregorianCalendar();
 		thirteen.set(Calendar.YEAR, thirteen.get(Calendar.YEAR) - 13);
+		System.out.println("trece="+thirteen+" calreceived="+this.getFnacimiento()+"!!!!!!BBB");
 		if (this.getFnacimiento().after(thirteen.getTime()))
 		{
 			throw new NotOldEnoughException();
@@ -83,6 +85,31 @@ public class UsuarioControlador extends Usuario
 		}
 		conn.commit();
 		conn.close();
+	}
+
+	public void recibir() throws SQLException, UsuarioBaneadoException
+	{
+		Connection conn=c.getConn();
+		PreparedStatement ps = conn.prepareStatement("select * from usuarios where pass=? and (id=? or email=?)");
+		ps.setString(0, this.getPass());
+		ps.setString(1, this.getId());
+		ps.setString(2, this.getId());
+		ResultSet rs=ps.executeQuery();
+		if (rs.next())
+		{
+			this.setActivo(Integer.parseInt(rs.getString("cuentaActiva")));
+			if (this.getActivo()!=1)
+			{
+				throw new UsuarioBaneadoException();
+			}
+			this.setId(rs.getString("id"));
+			this.setNombre(rs.getString("nombre"));
+			this.setApellidos(rs.getString("apellidos"));
+			this.setPass(rs.getString("pass"));
+			this.setRol(rs.getString("rol"));
+			this.setFnacimiento(rs.getString(""));
+			this.setEmail(rs.getString("correoelectronico"));
+		}
 	}
 
 	
