@@ -1,4 +1,4 @@
-package Controlador;
+		package Controlador;
 //////CLASE DEPRECATED, MANTENIDA POR SI QUIERO ACTUALIZARLA O RECICLAR SUS MÉTODOS
 ////// Hecho en https://stackoverflow.com/questions/18142745/how-do-i-generate-a-salt-in-java-for-salted-hash
 ////// Ten en cuenta esto https://stackoverflow.com/questions/634727/how-to-convert-utf-8-character-to-iso-latin-1

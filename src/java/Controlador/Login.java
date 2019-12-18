@@ -43,6 +43,9 @@ public class Login extends HttpServlet {
 		catch (Exception e)
 		{
 			//Fallar: "Usuario:Contraseña no validos"
+			HttpSession session=request.getSession(false);
+			session.setAttribute("loginerr", "Usuario con esa clave no ha sido encontrado.");
+			response.sendRedirect("login.jsp");
 		}
 		
 	}

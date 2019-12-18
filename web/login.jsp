@@ -16,8 +16,11 @@
 		HttpSession s=request.getSession();
 		if(s.getAttribute("loginerr")!=null)
 		{ %>
-			<p class="error" id="loginError"></p>
-		<% }%>
+			<p class="error" id="loginError"><c:out value="${sessionScope.loginerr}" /></p>
+			
+		<% 
+			s.removeAttribute("loginerr");
+		}%>
 		
 		
         <div class="container-fluid row curhead">

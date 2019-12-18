@@ -1,5 +1,6 @@
 package Controlador;
 
+import Controlador.Excepciones.NotOldEnoughException;
 import java.io.*;
 import java.sql.*;
 import java.text.*;
@@ -47,11 +48,17 @@ public class Register extends HttpServlet {
 						uc.setFnacimiento(new java.sql.Date(birthdate.getTimeInMillis()));
 						try
 						{
-							uc.crear();	
+							uc.crear();
+							response.sendRedirect("index.jsp");
+						}
+						catch (NotOldEnoughException e)
+						{
+							session.setAttribute("loginerr", "Usuario demasiado joven para entrar");
+							response.sendRedirect("login.jsp");
 						}
 						catch (Exception e)
 						{
-							System.out.println("Peto 1");
+							System.out.println(e.getMessage());
 						}
 
 					}
@@ -59,7 +66,6 @@ public class Register extends HttpServlet {
 			}
 			catch (Exception e)
 			{
-				System.out.println("Peto 2");
 			}
 
 			

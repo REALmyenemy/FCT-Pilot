@@ -44,7 +44,7 @@
 			
 			<ul class="nav justify-content-end">
 				<%
-					if (session.getAttribute("sesion")==null) {
+					if (session.getAttribute("loginUser")==null) {
 				%>	
 				
 				<li class="nav-item">
@@ -59,6 +59,10 @@
 				%>
 				<li class="nav-item">
 					<a class="nav-link btn btn-primary btn-block" href="profile.jsp">Mi perfil</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-primary btn-block" href="Logout">Desconectar</a>
+					
 				</li>
 				
 				<%

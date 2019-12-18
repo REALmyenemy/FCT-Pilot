@@ -1,6 +1,8 @@
 package Controlador;
 
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Conectar
 {
@@ -28,6 +30,15 @@ public class Conectar
     {
         return connection;
     }
+	public Connection getNewConn()
+	{
+		try {
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/fctpilot","fctPilot","fctPilot");
+		} catch (SQLException ex) {
+			Logger.getLogger(Conectar.class.getName()).log(Level.SEVERE, null, ex);
+		}
+		return null;
+	}
     
     public void ejecutar(String sql) throws SQLException
     {
