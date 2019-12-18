@@ -21,7 +21,7 @@
 											<input type="text" class="form-control search-slt" name="name" placeholder="Empresa, Sector...">
 										</div>
 										 <div class="col-lg-5 col-md-5 col-sm-12 p-0 bar-left">
-											<input type="text" class="form-control search-slt" name="place" placeholder="Ciudad">
+											<input type="text" class="form-control search-slt" name="place" placeholder="Ciudad" value="">
 										</div>
 										<div class="col-lg-2 col-md-2 col-sm-12 p-0 bar-left">
 											<li class="margin-t-lg"><label for="buscar" href="" class="btn btn-primary btn-block"><i class="fas fa-search" ></i></label>

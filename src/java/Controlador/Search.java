@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "search", urlPatterns = {"/search"})
+@WebServlet(name = "search", urlPatterns = {"/Search"})
 public class Search extends HttpServlet {
 
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -23,7 +23,7 @@ public class Search extends HttpServlet {
 		String firstInput=request.getParameter("name").toUpperCase();
 		ArrayList <Empresa> empresas=new ArrayList();
 		try {
-			c.ejecutar("select * from empresa where upper(nombre) like '%"+"%' or sector like '%"+"%'");
+			c.ejecutar("select * from empresa where lower(nombre) like '%"+firstInput+"%' or lower(sector) like '%"+firstInput+"%'");
 			ResultSet rst=c.getRset();
 			Empresa e;
 			while (rst.next())

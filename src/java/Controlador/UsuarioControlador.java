@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.logging.Level;
@@ -96,7 +97,7 @@ public class UsuarioControlador extends Usuario
 	public void recibir() throws UsuarioBaneadoException, UserNotFoundException, SQLException
 	{
 			this.start();
-			Connection conn=c.getNewConn();
+			Connection conn=c.getConn();
 			/*
 			//PreparedStatement ps = conn.prepareStatement("select * from usuarios where pass=? and (id=? or correoelectronico=?)");
 			PreparedStatement ps = conn.prepareStatement("select * from usuarios where id=?");
@@ -109,7 +110,11 @@ public class UsuarioControlador extends Usuario
 			*//*
 			ResultSet rs=ps.executeQuery();
 			*/
-			c.ejecutar("select * from usuarios where pass='"+this.getPass()+"' and (id='"+this.getId()+"' or correoelectronico='"+this.getId()+"')");
+			/*c.ejecutar("select * from usuarios where pass='"+this.getPass()+"' and (id='"+this.getId()+"' or correoelectronico='"+this.getId()+"')");
+			ResultSet rs=c.getRset();
+			*/
+			
+			c.ejecutar("select * from usuarios where id='"+this.getId()+"' or correoelectronico='"+this.getId()+"'");
 			ResultSet rs=c.getRset();
 			
 			if (rs.next())

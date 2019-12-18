@@ -23,7 +23,7 @@
 
 						<img src="img/${sessionScope.imagenes}" alt="Empresa Prueba" class="col-xs-12 col-md-3"/>
 						<div class="col-xs-12 col-md-6">
-							<h2 class="col-xs-1">Empresa de Prueba</h2>
+							<h2 class="col-xs-1"><c:out value="$empresa.nombre"></c:out></h2>
 							<p class="col-xs-2">Valoración de la empresa</p>
 							<p class="col-xs-1">Valoración verificada</p>
 							<p class="col-xs-1">Ciudad</p>

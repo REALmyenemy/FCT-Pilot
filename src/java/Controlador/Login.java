@@ -1,5 +1,6 @@
 package Controlador;
 
+import Controlador.Excepciones.UsuarioBaneadoException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -39,6 +40,12 @@ public class Login extends HttpServlet {
 			HttpSession session=request.getSession(true);
 			session.setAttribute("loginUser", uc);
 			response.sendRedirect("index.jsp");
+		}
+		catch (UsuarioBaneadoException e)
+		{
+			HttpSession session=request.getSession(false);
+			session.setAttribute("loginerr", "Usuario inactivo, contacte con soporte");
+			response.sendRedirect("login.jsp");
 		}
 		catch (Exception e)
 		{
